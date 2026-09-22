@@ -1,0 +1,5179 @@
+{
+  "version": 1,
+  "generatedFrom": [
+    "Activation Hub [TEST] export, 16 Sep 2026",
+    "ea-agentic-app-templates README (saved 3 Sep 2026)"
+  ],
+  "hubUrl": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+  "taxonomy": {
+    "goals": [
+      {
+        "id": "demonstrate",
+        "label": "Show or demo something to a client"
+      },
+      {
+        "id": "prepare_conversation",
+        "label": "Prepare for a client conversation or workshop"
+      },
+      {
+        "id": "learn",
+        "label": "Learn or get up to speed"
+      },
+      {
+        "id": "build_customise",
+        "label": "Build or customise something for a client"
+      },
+      {
+        "id": "propose",
+        "label": "Create a proposal, pitch or commercial response"
+      },
+      {
+        "id": "find_event",
+        "label": "Find an event, lab or session to attend"
+      }
+    ],
+    "assetNeeds": [
+      "demo",
+      "walkthrough",
+      "template",
+      "deck",
+      "recording",
+      "proposal",
+      "guide",
+      "training",
+      "event",
+      "tool",
+      "collateral",
+      "campaign"
+    ],
+    "capabilities": [
+      {
+        "id": "finance-transformation",
+        "label": "Finance Transformation",
+        "synonyms": [
+          "finance",
+          "cfo",
+          "office of the cfo",
+          "finance operations",
+          "accounting",
+          "treasury"
+        ]
+      },
+      {
+        "id": "procure-to-pay",
+        "label": "Procure-to-pay / accounts payable",
+        "synonyms": [
+          "p2p",
+          "accounts payable",
+          "ap",
+          "invoice",
+          "dispute",
+          "deduction",
+          "procurement"
+        ]
+      },
+      {
+        "id": "record-to-report",
+        "label": "Record-to-report (close & reconciliation)",
+        "synonyms": [
+          "r2r",
+          "period-end close",
+          "close",
+          "reconciliation",
+          "general accounting",
+          "reporting"
+        ]
+      },
+      {
+        "id": "fpa",
+        "label": "FP&A / variance analysis",
+        "synonyms": [
+          "fp&a",
+          "financial planning",
+          "variance",
+          "budget",
+          "forecast"
+        ]
+      },
+      {
+        "id": "order-to-cash",
+        "label": "Order-to-cash",
+        "synonyms": [
+          "o2c",
+          "orders",
+          "spare parts",
+          "fulfilment",
+          "billing"
+        ]
+      },
+      {
+        "id": "lending-credit",
+        "label": "Lending & credit",
+        "synonyms": [
+          "lending",
+          "credit origination",
+          "loan",
+          "underwriting",
+          "credit monitoring"
+        ]
+      },
+      {
+        "id": "customer-service",
+        "label": "Contact centre & customer service",
+        "synonyms": [
+          "contact center",
+          "contact centre",
+          "call centre",
+          "advisor assist",
+          "customer service"
+        ]
+      },
+      {
+        "id": "supply-chain",
+        "label": "Supply chain",
+        "synonyms": [
+          "supply chain planning",
+          "scor",
+          "logistics",
+          "inventory",
+          "demand planning"
+        ]
+      },
+      {
+        "id": "document-processing",
+        "label": "Document processing",
+        "synonyms": [
+          "docuflow",
+          "document ai",
+          "intelligent document processing"
+        ]
+      },
+      {
+        "id": "process-studio",
+        "label": "Process Studio",
+        "synonyms": [
+          "process mining",
+          "process re-imagination",
+          "agentic blueprint",
+          "simulation"
+        ]
+      },
+      {
+        "id": "context-studio",
+        "label": "Context Studio",
+        "synonyms": [
+          "client context",
+          "knowledge graph",
+          "schemas",
+          "conceptual model"
+        ]
+      },
+      {
+        "id": "agentic-app-studio",
+        "label": "Agentic App Studio",
+        "synonyms": [
+          "agentic apps",
+          "build agents",
+          "mcp",
+          "a2a"
+        ]
+      },
+      {
+        "id": "product-workbench",
+        "label": "Product Workbench",
+        "synonyms": [
+          "pwb",
+          "workbench"
+        ]
+      },
+      {
+        "id": "agentic-pdlc",
+        "label": "Agentic PDLC / AI-first software delivery",
+        "synonyms": [
+          "pdlc",
+          "sdlc",
+          "coding agents",
+          "deepagents",
+          "application development",
+          "application modernisation",
+          "application modernization",
+          "legacy modernisation",
+          "mainframe modernisation"
+        ]
+      },
+      {
+        "id": "observability-governance",
+        "label": "Observability & governance",
+        "synonyms": [
+          "control tower",
+          "arize",
+          "evaluation",
+          "governance"
+        ]
+      },
+      {
+        "id": "enterprise-advantage",
+        "label": "Enterprise Advantage platform (overview)",
+        "synonyms": [
+          "ea",
+          "ica",
+          "ibm consulting advantage",
+          "advantage core",
+          "marketplace",
+          "eaef"
+        ]
+      },
+      {
+        "id": "selling-positioning",
+        "label": "Selling, positioning & commercial model",
+        "synonyms": [
+          "pitch",
+          "sell",
+          "value proposition",
+          "commercial model",
+          "pricing",
+          "positioning",
+          "client stories",
+          "proposal",
+          "rfp",
+          "bid",
+          "deal shaping",
+          "business case"
+        ]
+      },
+      {
+        "id": "partner-ecosystem",
+        "label": "Partner ecosystem",
+        "synonyms": [
+          "watsonx orchestrate",
+          "openai",
+          "google",
+          "anthropic",
+          "arize",
+          "partner"
+        ]
+      },
+      {
+        "id": "demo-building",
+        "label": "Building client demos",
+        "synonyms": [
+          "demo",
+          "prototype",
+          "demo build",
+          "showcase"
+        ]
+      }
+    ],
+    "industries": [
+      {
+        "id": "banking-financial-services",
+        "label": "Banking & Financial Services",
+        "synonyms": [
+          "bank",
+          "banking",
+          "financial services",
+          "fs",
+          "insurance",
+          "lending"
+        ]
+      },
+      {
+        "id": "government",
+        "label": "Government & Public Sector",
+        "synonyms": [
+          "government",
+          "public sector",
+          "federal"
+        ]
+      },
+      {
+        "id": "telecommunications",
+        "label": "Telecommunications",
+        "synonyms": [
+          "telco",
+          "telecom"
+        ]
+      },
+      {
+        "id": "consumer-goods",
+        "label": "Consumer goods & retail",
+        "synonyms": [
+          "cpg",
+          "consumer",
+          "retail"
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Industrial & manufacturing",
+        "synonyms": [
+          "industrial",
+          "manufacturing"
+        ]
+      }
+    ],
+    "types": [
+      {
+        "id": "accelerator",
+        "label": "Accelerator",
+        "mode": "build"
+      },
+      {
+        "id": "template",
+        "label": "Demo template",
+        "mode": "build"
+      },
+      {
+        "id": "walkthrough-deck",
+        "label": "Walkthrough deck",
+        "mode": "show"
+      },
+      {
+        "id": "recording",
+        "label": "Recording",
+        "mode": "learn"
+      },
+      {
+        "id": "guide",
+        "label": "Guide",
+        "mode": "learn"
+      },
+      {
+        "id": "lab",
+        "label": "Lab",
+        "mode": "learn"
+      },
+      {
+        "id": "course",
+        "label": "Course",
+        "mode": "learn"
+      },
+      {
+        "id": "event",
+        "label": "Event",
+        "mode": "learn"
+      },
+      {
+        "id": "campaign",
+        "label": "Campaign",
+        "mode": "show"
+      },
+      {
+        "id": "collateral",
+        "label": "Collateral",
+        "mode": "show"
+      },
+      {
+        "id": "platform",
+        "label": "Platform / tool",
+        "mode": "build"
+      },
+      {
+        "id": "community",
+        "label": "Community & support",
+        "mode": "learn"
+      }
+    ],
+    "readiness": [
+      {
+        "id": "ready-to-use",
+        "label": "Ready to use",
+        "rank": 0
+      },
+      {
+        "id": "attend",
+        "label": "Attend or watch",
+        "rank": 1
+      },
+      {
+        "id": "customise",
+        "label": "Customise first",
+        "rank": 2
+      },
+      {
+        "id": "build",
+        "label": "Build required",
+        "rank": 3
+      }
+    ]
+  },
+  "resources": [
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "demonstrate",
+        "build_customise"
+      ],
+      "clientMoments": [
+        "client demo"
+      ],
+      "prerequisites": [
+        "IBM w3 sign-in to pages.github.ibm.com"
+      ],
+      "caveats": [],
+      "keywords": [
+        "demo factory",
+        "demo",
+        "prototype",
+        "scenario",
+        "ready-to-show"
+      ],
+      "actions": [
+        {
+          "label": "Enter the Demo Factory",
+          "url": "https://pages.github.ibm.com/tolga/eaef-demo-factory/en/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "demo-factory",
+      "title": "EAEF Demo Factory",
+      "type": "accelerator",
+      "modes": [
+        "build",
+        "show"
+      ],
+      "description": "Where prototypes go from idea to on-floor demo. Spin up ready-to-show builds, browse pre-assembled demo scenarios and get your next client demo off the line.",
+      "purpose": "Starting a client demo from a guided, pre-assembled scenario instead of from scratch.",
+      "whatYouCanDo": "Browse pre-assembled demo scenarios and spin up a ready-to-show build.",
+      "capabilities": [
+        "demo-building",
+        "enterprise-advantage"
+      ],
+      "readiness": "customise",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise Pages",
+      "url": "https://pages.github.ibm.com/tolga/eaef-demo-factory/en/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "propose"
+      ],
+      "clientMoments": [
+        "proposal",
+        "deal shaping"
+      ],
+      "prerequisites": [
+        "IBM w3 sign-in to pages.github.ibm.com",
+        "Opportunity context (client, scope) to feed the generator"
+      ],
+      "caveats": [
+        "Beta — review every generated section before it reaches a client."
+      ],
+      "keywords": [
+        "proposal",
+        "rfp",
+        "bid",
+        "sow",
+        "draft",
+        "generator"
+      ],
+      "actions": [
+        {
+          "label": "Open the Proposal Generator",
+          "url": "https://pages.github.ibm.com/emeacoreai/aiis-proposal-generator/"
+        },
+        {
+          "label": "Send feedback",
+          "url": "mailto:jan-olof.jonsson@se.ibm.com?subject=AIIS%20Proposal%20Generator%20Feedback"
+        }
+      ],
+      "owner": null,
+      "contact": {
+        "name": "Jan-Olof Jonsson",
+        "email": "jan-olof.jonsson@se.ibm.com",
+        "role": "Proposal Generator feedback"
+      },
+      "status": "beta",
+      "lastValidated": null,
+      "id": "proposal-generator",
+      "title": "AIIS Proposal Generator",
+      "type": "accelerator",
+      "modes": [
+        "build"
+      ],
+      "description": "Draft client-ready Enterprise Advantage proposals in a fraction of the time. In active beta — try it on your next opportunity and tell the team what to improve.",
+      "purpose": "Producing a first draft of a client proposal for an EA opportunity.",
+      "whatYouCanDo": "Generate a proposal draft, then refine it for your client.",
+      "capabilities": [
+        "selling-positioning",
+        "enterprise-advantage"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "none",
+      "authoritativeSource": "GitHub Enterprise Pages",
+      "url": "https://pages.github.ibm.com/emeacoreai/aiis-proposal-generator/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "build_customise",
+        "demonstrate"
+      ],
+      "clientMoments": [
+        "client demo"
+      ],
+      "prerequisites": [
+        "Access to github.ibm.com",
+        "Python 3.10+ (3.11+ for several apps), Node.js 18+, npm",
+        "An AI coding agent (Claude Code, IBM Bob, Cursor or Copilot Workspace)"
+      ],
+      "caveats": [
+        "Read each template's State before you demo — three hold a merged client conversion, two are raw accelerators.",
+        "Ports collide across apps; demo credentials are committed and must be rotated before hosted use."
+      ],
+      "keywords": [
+        "template",
+        "agentic app",
+        "customise",
+        "customize",
+        "convert",
+        "rebrand",
+        "runnable"
+      ],
+      "actions": [
+        {
+          "label": "Open repository",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "agentic-app-templates",
+      "title": "EA Agentic App Templates portfolio",
+      "type": "accelerator",
+      "modes": [
+        "build"
+      ],
+      "description": "A portfolio of runnable enterprise applications that demonstrate governed multi-agent AI inside a real business process, packaged so each can be rebranded and repopulated for a specific client. Each folder is self-contained: backend, frontend, seed data, knowledge base and start scripts.",
+      "purpose": "Choosing a working agentic application to convert into a client-specific demo.",
+      "whatYouCanDo": "Pick a template, run the client-customization prompt kit with a coding agent, and get a branded demo on a client-* branch.",
+      "capabilities": [
+        "demo-building",
+        "agentic-app-studio",
+        "finance-transformation"
+      ],
+      "readiness": "customise",
+      "timeToValue": "days",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates",
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "FP&A variance analysis"
+      ],
+      "intents": [
+        "build_customise",
+        "demonstrate"
+      ],
+      "clientMoments": [
+        "client demo"
+      ],
+      "prerequisites": [
+        "VS Code (or similar) with an AI coding agent",
+        "Python 3.10+ (3.11+ for several apps), Node.js 18+, npm",
+        "Free ports — Backend 19090, frontend 15173",
+        "CLIENT-PROFILE.md: client name and website"
+      ],
+      "caveats": [
+        "start.sh fails hard on a port collision and tells you to edit .env.",
+        "Model configuration via litellm (AWS_REGION_NAME) — check the app's .env.example.",
+        "Demo credentials are committed to source control — rotate before any hosted use."
+      ],
+      "keywords": [
+        "FP&A variance analysis",
+        "template",
+        "agentic app",
+        "customise",
+        "runnable demo"
+      ],
+      "actions": [
+        {
+          "label": "View template",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Finance-FPA-Template"
+        },
+        {
+          "label": "Customization kit",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Finance-FPA-Template/client-customization"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "tpl-finance-fpa",
+      "title": "Finance FP&A Variance Analysis template",
+      "type": "template",
+      "modes": [
+        "build"
+      ],
+      "description": "Runnable agentic application for FP&A variance analysis: 11 agents (AGN1–AGN11) and 14 tools (TOL1–TOL14). Ships with a client-customization prompt kit, a Context/ knowledge base and a single-file walkthrough deck. State: Generic (CLIENT placeholder) — ready to convert as-is.",
+      "purpose": "Creating a client-branded, working demonstration you can run locally.",
+      "whatYouCanDo": "Run it locally with ./start.sh, then convert it for your client with the client-customization/ kit (00-run-all.md) on a client-* branch.",
+      "capabilities": [
+        "finance-transformation",
+        "fpa",
+        "demo-building"
+      ],
+      "readiness": "customise",
+      "timeToValue": "days",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Finance-FPA-Template",
+      "related": [
+        "deck-finance-fpa"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "FP&A variance analysis"
+      ],
+      "intents": [
+        "demonstrate",
+        "prepare_conversation"
+      ],
+      "clientMoments": [
+        "first conversation",
+        "client demo"
+      ],
+      "prerequisites": [
+        "Access to github.ibm.com to download the file"
+      ],
+      "caveats": [],
+      "keywords": [
+        "FPA-Variance-Analysis-Walkthrough.html",
+        "walkthrough",
+        "deck",
+        "client-ready",
+        "offline"
+      ],
+      "actions": [
+        {
+          "label": "Open deck folder",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Finance-FPA-Template"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "deck-finance-fpa",
+      "title": "FP&A variance analysis — client walkthrough deck",
+      "type": "walkthrough-deck",
+      "modes": [
+        "show"
+      ],
+      "description": "Single-file, three-tab HTML deck for client conversations about FP&A variance analysis: current state and challenges, the redefined agent-powered process, and customize/test plus a demo script. Self-contained — open the .html directly, no server, no build.",
+      "purpose": "A near-term client conversation where there isn't time to build a working demo.",
+      "whatYouCanDo": "Download FPA-Variance-Analysis-Walkthrough.html from the template folder and open it in a browser — it works offline.",
+      "capabilities": [
+        "finance-transformation",
+        "fpa"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Finance-FPA-Template",
+      "related": [
+        "tpl-finance-fpa"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "Account reconciliation"
+      ],
+      "intents": [
+        "build_customise",
+        "demonstrate"
+      ],
+      "clientMoments": [
+        "client demo"
+      ],
+      "prerequisites": [
+        "VS Code (or similar) with an AI coding agent",
+        "Python 3.10+ (3.11+ for several apps), Node.js 18+, npm",
+        "Free ports — Backend 9500, frontend 3001",
+        "CLIENT-PROFILE.md: client name and website"
+      ],
+      "caveats": [
+        "The top-level README is still titled mars-acc-reco and describes the Mars build it was derived from; the knowledge base itself is generic.",
+        "LLM_PROVIDER=aws (Bedrock) with AWS_REGION.",
+        "Demo credentials are committed to source control — rotate before any hosted use."
+      ],
+      "keywords": [
+        "Account reconciliation",
+        "template",
+        "agentic app",
+        "customise",
+        "runnable demo"
+      ],
+      "actions": [
+        {
+          "label": "View template",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/R2R-Account-Reconciliation-Template"
+        },
+        {
+          "label": "Customization kit",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/R2R-Account-Reconciliation-Template/client-customization"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "tpl-r2r-reconciliation",
+      "title": "R2R Account Reconciliation template",
+      "type": "template",
+      "modes": [
+        "build"
+      ],
+      "description": "Runnable agentic application for account reconciliation: 5 agents (AR-01–AR-05), LangGraph with human-in-the-loop. Ships with a client-customization prompt kit, a Context/ knowledge base and a single-file walkthrough deck. State: Generic (client placeholder) — ready to convert as-is.",
+      "purpose": "Creating a client-branded, working demonstration you can run locally.",
+      "whatYouCanDo": "Run it locally with ./start.sh, then convert it for your client with the client-customization/ kit (00-run-all.md) on a client-* branch.",
+      "capabilities": [
+        "finance-transformation",
+        "record-to-report",
+        "demo-building"
+      ],
+      "readiness": "customise",
+      "timeToValue": "days",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/R2R-Account-Reconciliation-Template",
+      "related": [
+        "deck-r2r-reconciliation"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "Account reconciliation"
+      ],
+      "intents": [
+        "demonstrate",
+        "prepare_conversation"
+      ],
+      "clientMoments": [
+        "first conversation",
+        "client demo"
+      ],
+      "prerequisites": [
+        "Access to github.ibm.com to download the file"
+      ],
+      "caveats": [],
+      "keywords": [
+        "R2R-Account-Reconciliation-Walkthrough.html",
+        "walkthrough",
+        "deck",
+        "client-ready",
+        "offline"
+      ],
+      "actions": [
+        {
+          "label": "Open deck folder",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/R2R-Account-Reconciliation-Template"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "deck-r2r-reconciliation",
+      "title": "Account reconciliation — client walkthrough deck",
+      "type": "walkthrough-deck",
+      "modes": [
+        "show"
+      ],
+      "description": "Single-file, three-tab HTML deck for client conversations about account reconciliation: current state and challenges, the redefined agent-powered process, and customize/test plus a demo script. Self-contained — open the .html directly, no server, no build.",
+      "purpose": "A near-term client conversation where there isn't time to build a working demo.",
+      "whatYouCanDo": "Download R2R-Account-Reconciliation-Walkthrough.html from the template folder and open it in a browser — it works offline.",
+      "capabilities": [
+        "finance-transformation",
+        "record-to-report"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/R2R-Account-Reconciliation-Template",
+      "related": [
+        "tpl-r2r-reconciliation"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [
+        "banking-financial-services"
+      ],
+      "clientProblems": [
+        "Credit origination & monitoring"
+      ],
+      "intents": [
+        "build_customise",
+        "demonstrate"
+      ],
+      "clientMoments": [
+        "client demo"
+      ],
+      "prerequisites": [
+        "VS Code (or similar) with an AI coding agent",
+        "Python 3.10+ (3.11+ for several apps), Node.js 18+, npm",
+        "Free ports — Backend 9000, frontend 5173",
+        "CLIENT-PROFILE.md: client name and website"
+      ],
+      "caveats": [
+        "LLM_ENABLED / LLM_TEMPERATURE / LLM_TIMEOUT_SECONDS.",
+        "Demo credentials are committed to source control — rotate before any hosted use."
+      ],
+      "keywords": [
+        "Credit origination & monitoring",
+        "template",
+        "agentic app",
+        "customise",
+        "runnable demo"
+      ],
+      "actions": [
+        {
+          "label": "View template",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Lending-CreditOrigination-Template"
+        },
+        {
+          "label": "Customization kit",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Lending-CreditOrigination-Template/client-customization"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "tpl-lending-credit",
+      "title": "Lending — Credit Origination & Monitoring template",
+      "type": "template",
+      "modes": [
+        "build"
+      ],
+      "description": "Runnable agentic application for credit origination & monitoring: 27 agents (AGT-01–AGT-27), LangGraph. Ships with a client-customization prompt kit, a Context/ knowledge base and a single-file walkthrough deck. State: Generic (client placeholder) — ready to convert as-is.",
+      "purpose": "Creating a client-branded, working demonstration you can run locally.",
+      "whatYouCanDo": "Run it locally with ./start.sh, then convert it for your client with the client-customization/ kit (00-run-all.md) on a client-* branch.",
+      "capabilities": [
+        "lending-credit",
+        "demo-building"
+      ],
+      "readiness": "customise",
+      "timeToValue": "days",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Lending-CreditOrigination-Template",
+      "related": [
+        "deck-lending-credit"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [
+        "banking-financial-services"
+      ],
+      "clientProblems": [
+        "Credit origination & monitoring"
+      ],
+      "intents": [
+        "demonstrate",
+        "prepare_conversation"
+      ],
+      "clientMoments": [
+        "first conversation",
+        "client demo"
+      ],
+      "prerequisites": [
+        "Access to github.ibm.com to download the file"
+      ],
+      "caveats": [],
+      "keywords": [
+        "Lending-CreditOrigination-Walkthrough.html",
+        "walkthrough",
+        "deck",
+        "client-ready",
+        "offline"
+      ],
+      "actions": [
+        {
+          "label": "Open deck folder",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Lending-CreditOrigination-Template"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "deck-lending-credit",
+      "title": "Credit origination & monitoring — client walkthrough deck",
+      "type": "walkthrough-deck",
+      "modes": [
+        "show"
+      ],
+      "description": "Single-file, three-tab HTML deck for client conversations about credit origination & monitoring: current state and challenges, the redefined agent-powered process, and customize/test plus a demo script. Self-contained — open the .html directly, no server, no build.",
+      "purpose": "A near-term client conversation where there isn't time to build a working demo.",
+      "whatYouCanDo": "Download Lending-CreditOrigination-Walkthrough.html from the template folder and open it in a browser — it works offline.",
+      "capabilities": [
+        "lending-credit"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Lending-CreditOrigination-Template",
+      "related": [
+        "tpl-lending-credit"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [
+        "consumer-goods"
+      ],
+      "clientProblems": [
+        "Period-end close (R2R)"
+      ],
+      "intents": [
+        "build_customise",
+        "demonstrate"
+      ],
+      "clientMoments": [
+        "client demo"
+      ],
+      "prerequisites": [
+        "VS Code (or similar) with an AI coding agent",
+        "Python 3.10+ (3.11+ for several apps), Node.js 18+, npm",
+        "Free ports — Backend 9000, frontend 5173",
+        "CLIENT-PROFILE.md: client name and website"
+      ],
+      "caveats": [
+        "Holds a merged Amway India conversion — pointing it at another client means running the customization kit again, not editing config.",
+        "Check the app's .env.example.",
+        "Demo credentials are committed to source control — rotate before any hosted use."
+      ],
+      "keywords": [
+        "Period-end close (R2R)",
+        "template",
+        "agentic app",
+        "customise",
+        "runnable demo"
+      ],
+      "actions": [
+        {
+          "label": "View template",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/R2R%20-%20General%20Accounting%20&%20Reporting%20Accelerator%20-%20Template"
+        },
+        {
+          "label": "Customization kit",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/R2R%20-%20General%20Accounting%20&%20Reporting%20Accelerator%20-%20Template/client-customization"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "tpl-r2r-close",
+      "title": "R2R General Accounting & Reporting template",
+      "type": "template",
+      "modes": [
+        "build"
+      ],
+      "description": "Runnable agentic application for period-end close (R2R): 6 agents (AGN1–AGN6) with 5 review gates. Ships with a client-customization prompt kit, a Context/ knowledge base and a single-file walkthrough deck. State: Converted — Amway India (reconversion required for a new client).",
+      "purpose": "Creating a client-branded, working demonstration you can run locally.",
+      "whatYouCanDo": "Run it locally with ./start.sh, then convert it for your client with the client-customization/ kit (00-run-all.md) on a client-* branch.",
+      "capabilities": [
+        "finance-transformation",
+        "record-to-report",
+        "demo-building"
+      ],
+      "readiness": "customise",
+      "timeToValue": "days",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/R2R%20-%20General%20Accounting%20&%20Reporting%20Accelerator%20-%20Template",
+      "related": [
+        "deck-r2r-close"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [
+        "consumer-goods"
+      ],
+      "clientProblems": [
+        "Period-end close (R2R)"
+      ],
+      "intents": [
+        "demonstrate",
+        "prepare_conversation"
+      ],
+      "clientMoments": [
+        "first conversation",
+        "client demo"
+      ],
+      "prerequisites": [
+        "Access to github.ibm.com to download the file"
+      ],
+      "caveats": [
+        "Deck belongs to a converted engagement (Amway India) — check for client references before showing it to someone else."
+      ],
+      "keywords": [
+        "R2R-Accelerator-Walkthrough.html",
+        "walkthrough",
+        "deck",
+        "client-ready",
+        "offline"
+      ],
+      "actions": [
+        {
+          "label": "Open deck folder",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/R2R%20-%20General%20Accounting%20&%20Reporting%20Accelerator%20-%20Template"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "deck-r2r-close",
+      "title": "Period-end close (R2R) — client walkthrough deck",
+      "type": "walkthrough-deck",
+      "modes": [
+        "show"
+      ],
+      "description": "Single-file, three-tab HTML deck for client conversations about period-end close (R2R): current state and challenges, the redefined agent-powered process, and customize/test plus a demo script. Self-contained — open the .html directly, no server, no build.",
+      "purpose": "A near-term client conversation where there isn't time to build a working demo.",
+      "whatYouCanDo": "Download R2R-Accelerator-Walkthrough.html from the template folder and open it in a browser — it works offline.",
+      "capabilities": [
+        "finance-transformation",
+        "record-to-report"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/R2R%20-%20General%20Accounting%20&%20Reporting%20Accelerator%20-%20Template",
+      "related": [
+        "tpl-r2r-close"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "Spare-parts order-to-cash"
+      ],
+      "intents": [
+        "build_customise",
+        "demonstrate"
+      ],
+      "clientMoments": [
+        "client demo"
+      ],
+      "prerequisites": [
+        "VS Code (or similar) with an AI coding agent",
+        "Python 3.10+ (3.11+ for several apps), Node.js 18+, npm",
+        "Free ports — Backend 9500, frontend 5173",
+        "CLIENT-PROFILE.md: client name and website"
+      ],
+      "caveats": [
+        "Holds a merged Pearson conversion — reconvert rather than edit.",
+        "LLM_PROVIDER=anthropic with ANTHROPIC_API_KEY (backend) / aws (root).",
+        "Demo credentials are committed to source control — rotate before any hosted use."
+      ],
+      "keywords": [
+        "Spare-parts order-to-cash",
+        "template",
+        "agentic app",
+        "customise",
+        "runnable demo"
+      ],
+      "actions": [
+        {
+          "label": "View template",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/O2C-%20Spare%20Parts%20-Template"
+        },
+        {
+          "label": "Customization kit",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/O2C-%20Spare%20Parts%20-Template/client-customization"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "tpl-o2c-spare-parts",
+      "title": "O2C Spare Parts template",
+      "type": "template",
+      "modes": [
+        "build"
+      ],
+      "description": "Runnable agentic application for spare-parts order-to-cash: 5 agents (AGN1–AGN5), LangGraph. Ships with a client-customization prompt kit, a Context/ knowledge base and a single-file walkthrough deck. State: Converted — Pearson (reconversion required for a new client).",
+      "purpose": "Creating a client-branded, working demonstration you can run locally.",
+      "whatYouCanDo": "Run it locally with ./start.sh, then convert it for your client with the client-customization/ kit (00-run-all.md) on a client-* branch.",
+      "capabilities": [
+        "order-to-cash",
+        "demo-building"
+      ],
+      "readiness": "customise",
+      "timeToValue": "days",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/O2C-%20Spare%20Parts%20-Template",
+      "related": [
+        "deck-o2c-spare-parts"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "Spare-parts order-to-cash"
+      ],
+      "intents": [
+        "demonstrate",
+        "prepare_conversation"
+      ],
+      "clientMoments": [
+        "first conversation",
+        "client demo"
+      ],
+      "prerequisites": [
+        "Access to github.ibm.com to download the file"
+      ],
+      "caveats": [
+        "Deck belongs to a converted engagement (Pearson) — check for client references before showing it to someone else."
+      ],
+      "keywords": [
+        "Pearson-O2C-Walkthrough.html",
+        "walkthrough",
+        "deck",
+        "client-ready",
+        "offline"
+      ],
+      "actions": [
+        {
+          "label": "Open deck folder",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/O2C-%20Spare%20Parts%20-Template"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "deck-o2c-spare-parts",
+      "title": "Spare-parts order-to-cash — client walkthrough deck",
+      "type": "walkthrough-deck",
+      "modes": [
+        "show"
+      ],
+      "description": "Single-file, three-tab HTML deck for client conversations about spare-parts order-to-cash: current state and challenges, the redefined agent-powered process, and customize/test plus a demo script. Self-contained — open the .html directly, no server, no build.",
+      "purpose": "A near-term client conversation where there isn't time to build a working demo.",
+      "whatYouCanDo": "Download Pearson-O2C-Walkthrough.html from the template folder and open it in a browser — it works offline.",
+      "capabilities": [
+        "order-to-cash"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/O2C-%20Spare%20Parts%20-Template",
+      "related": [
+        "tpl-o2c-spare-parts"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "Contact-centre advisor assist"
+      ],
+      "intents": [
+        "build_customise",
+        "demonstrate"
+      ],
+      "clientMoments": [
+        "client demo"
+      ],
+      "prerequisites": [
+        "VS Code (or similar) with an AI coding agent",
+        "Python 3.10+ (3.11+ for several apps), Node.js 18+, npm",
+        "Free ports — Backend 9000, frontend 5174",
+        "CLIENT-PROFILE.md: client name and website"
+      ],
+      "caveats": [
+        "Holds a merged Pearson conversion — reconvert rather than edit. start.sh auto-increments to the next free port.",
+        "Check the app's .env.example.",
+        "Demo credentials are committed to source control — rotate before any hosted use."
+      ],
+      "keywords": [
+        "Contact-centre advisor assist",
+        "template",
+        "agentic app",
+        "customise",
+        "runnable demo"
+      ],
+      "actions": [
+        {
+          "label": "View template",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Contact%20Center-Assist-Template"
+        },
+        {
+          "label": "Customization kit",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Contact%20Center-Assist-Template/client-customization"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "tpl-contact-center-assist",
+      "title": "Contact Center Assist template",
+      "type": "template",
+      "modes": [
+        "build"
+      ],
+      "description": "Runnable agentic application for contact-centre advisor assist: 6-stage pipeline (Intake → Classification → Context → Recommendation → Resolution → Disposition). Ships with a client-customization prompt kit, a Context/ knowledge base and a single-file walkthrough deck. State: Converted — Pearson (reconversion required for a new client).",
+      "purpose": "Creating a client-branded, working demonstration you can run locally.",
+      "whatYouCanDo": "Run it locally with ./start.sh, then convert it for your client with the client-customization/ kit (00-run-all.md) on a client-* branch.",
+      "capabilities": [
+        "customer-service",
+        "demo-building"
+      ],
+      "readiness": "customise",
+      "timeToValue": "days",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Contact%20Center-Assist-Template",
+      "related": [
+        "deck-contact-center-assist"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "Contact-centre advisor assist"
+      ],
+      "intents": [
+        "demonstrate",
+        "prepare_conversation"
+      ],
+      "clientMoments": [
+        "first conversation",
+        "client demo"
+      ],
+      "prerequisites": [
+        "Access to github.ibm.com to download the file"
+      ],
+      "caveats": [
+        "Deck belongs to a converted engagement (Pearson) — check for client references before showing it to someone else."
+      ],
+      "keywords": [
+        "Pearson-Contact-Centre-Assist-Walkthrough.html",
+        "walkthrough",
+        "deck",
+        "client-ready",
+        "offline"
+      ],
+      "actions": [
+        {
+          "label": "Open deck folder",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Contact%20Center-Assist-Template"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "deck-contact-center-assist",
+      "title": "Contact-centre advisor assist — client walkthrough deck",
+      "type": "walkthrough-deck",
+      "modes": [
+        "show"
+      ],
+      "description": "Single-file, three-tab HTML deck for client conversations about contact-centre advisor assist: current state and challenges, the redefined agent-powered process, and customize/test plus a demo script. Self-contained — open the .html directly, no server, no build.",
+      "purpose": "A near-term client conversation where there isn't time to build a working demo.",
+      "whatYouCanDo": "Download Pearson-Contact-Centre-Assist-Walkthrough.html from the template folder and open it in a browser — it works offline.",
+      "capabilities": [
+        "customer-service"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Contact%20Center-Assist-Template",
+      "related": [
+        "tpl-contact-center-assist"
+      ],
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "Invoice dispute and deduction resolution"
+      ],
+      "intents": [
+        "build_customise",
+        "demonstrate"
+      ],
+      "clientMoments": [
+        "client demo"
+      ],
+      "prerequisites": [
+        "Access to github.ibm.com",
+        "Python and Node.js toolchain (check the folder README)"
+      ],
+      "caveats": [
+        "Not listed in the portfolio README — conversion guarantees are unconfirmed."
+      ],
+      "keywords": [
+        "p2p",
+        "dispute",
+        "invoice",
+        "accounts payable",
+        "deduction"
+      ],
+      "actions": [
+        {
+          "label": "View folder",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/P2P_Dispute%20Resolution_Template"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "undocumented",
+      "lastValidated": null,
+      "id": "tpl-p2p-dispute",
+      "title": "P2P Dispute Resolution template",
+      "type": "template",
+      "modes": [
+        "build"
+      ],
+      "description": "Procure-to-pay dispute resolution application folder in the ea-agentic-app-templates repository. It is present in the repository but not yet described in the portfolio README (no documented state, kit or walkthrough deck).",
+      "purpose": "Exploring an agentic procure-to-pay dispute scenario as a starting point for a demo.",
+      "whatYouCanDo": "Open the folder and read its README to confirm what it runs and whether a customization kit is included.",
+      "capabilities": [
+        "finance-transformation",
+        "procure-to-pay",
+        "demo-building"
+      ],
+      "readiness": "build",
+      "timeToValue": "days",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/P2P_Dispute%20Resolution_Template",
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026) (directory listing only)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "Period-end close"
+      ],
+      "intents": [
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Python 3.10+, Node.js 18+, npm",
+        "Free ports — backend 9000, frontend 5173"
+      ],
+      "caveats": [
+        "None of the template conversion guarantees apply."
+      ],
+      "keywords": [
+        "close",
+        "r2r",
+        "accounting"
+      ],
+      "actions": [
+        {
+          "label": "View folder",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Gen%20Accounting%20Reporting_D"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "raw",
+      "lastValidated": null,
+      "id": "raw-gen-accounting",
+      "title": "Gen Accounting Reporting (raw accelerator)",
+      "type": "template",
+      "modes": [
+        "build"
+      ],
+      "description": "Period-end close (R2R) accelerator with 6 agents (AGN1–AGN6) and 5 review gates. Raw accelerator — not templatized: no Context/, no client-customization kit and no brand-token layer.",
+      "purpose": "Reference implementation for engineers; not a quick client conversion.",
+      "whatYouCanDo": "Study or run the application; client conversion requires engineering work.",
+      "capabilities": [
+        "finance-transformation",
+        "record-to-report"
+      ],
+      "readiness": "build",
+      "timeToValue": "weeks",
+      "technicalLevel": "advanced",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Gen%20Accounting%20Reporting_D",
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [
+        "Supply-chain planning"
+      ],
+      "intents": [
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Python 3.10+, Node.js 18+, npm",
+        "ANTHROPIC_API_KEY for the app",
+        "Free ports — backend 9000, frontend 5173"
+      ],
+      "caveats": [
+        "None of the template conversion guarantees apply."
+      ],
+      "keywords": [
+        "scor",
+        "supply chain",
+        "planning",
+        "mcp"
+      ],
+      "actions": [
+        {
+          "label": "View folder",
+          "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Supply%20Chain%20Planning_SCOR"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "raw",
+      "lastValidated": null,
+      "id": "raw-supply-chain-scor",
+      "title": "Supply Chain Planning SCOR (raw accelerator)",
+      "type": "template",
+      "modes": [
+        "build"
+      ],
+      "description": "SCOR supply-chain planning accelerator: 8 named agents, 18 MCP tool boundaries and 5 amber gates. Raw accelerator — not templatized: no Context/, no client-customization kit and no brand-token layer.",
+      "purpose": "Reference implementation for a supply-chain planning demo; requires engineering to adapt.",
+      "whatYouCanDo": "Run the application locally (LLM_PROVIDER=anthropic) and adapt it with engineering support.",
+      "capabilities": [
+        "supply-chain"
+      ],
+      "readiness": "build",
+      "timeToValue": "weeks",
+      "technicalLevel": "advanced",
+      "authoritativeSource": "GitHub Enterprise — ea-agentic-app-templates",
+      "url": "https://github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-agentic-app-templates/tree/main/Supply%20Chain%20Planning_SCOR",
+      "provenance": "ea-agentic-app-templates README (saved 3 Sep 2026)"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "prepare_conversation",
+        "demonstrate",
+        "propose"
+      ],
+      "clientMoments": [
+        "first conversation",
+        "client meeting"
+      ],
+      "prerequisites": [
+        "IBM w3 sign-in (ContentPlus)"
+      ],
+      "caveats": [],
+      "keywords": [
+        "finance transformation",
+        "cfo",
+        "treasury",
+        "agentic finance",
+        "collateral"
+      ],
+      "actions": [
+        {
+          "label": "Open campaign on ContentPlus",
+          "url": "https://w3.ibm.com/consulting/contentplus/campaigns/682f608c12e6482db7c77d81"
+        }
+      ],
+      "owner": null,
+      "contact": {
+        "name": "Francesco Brenna / Monica Proothi",
+        "email": null,
+        "role": "Campaign contacts"
+      },
+      "status": "live",
+      "lastValidated": null,
+      "id": "campaign-finance",
+      "title": "Redefine Finance with Agentic AI — campaign",
+      "type": "campaign",
+      "modes": [
+        "show",
+        "learn"
+      ],
+      "description": "Joint AIIS × Finance Strategy & Transformation go-to-market campaign, launched July 2026. Covers 30–40 finance use cases (FP&A, record-to-report, treasury) with client collateral, messaging and the launch webinar replay on IBM ContentPlus.",
+      "purpose": "Framing a Finance Transformation conversation with approved, client-facing campaign material.",
+      "whatYouCanDo": "Pick up campaign messaging and client collateral for a finance conversation.",
+      "capabilities": [
+        "finance-transformation",
+        "fpa",
+        "record-to-report",
+        "selling-positioning"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM ContentPlus",
+      "url": "https://w3.ibm.com/consulting/contentplus/campaigns/682f608c12e6482db7c77d81",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "prepare_conversation",
+        "demonstrate"
+      ],
+      "clientMoments": [
+        "first conversation"
+      ],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [
+        "Link reconstructed: the test export pointed at a localhost copy of this Hub page."
+      ],
+      "keywords": [
+        "supply chain",
+        "campaign",
+        "collateral"
+      ],
+      "actions": [
+        {
+          "label": "Open campaign page",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/docs/campaign-agentic-supply-chain.html"
+        }
+      ],
+      "owner": null,
+      "contact": {
+        "name": "Francesco Brenna / Pushpinder Singh",
+        "email": null,
+        "role": "Campaign contacts"
+      },
+      "status": "live",
+      "lastValidated": null,
+      "id": "campaign-supply-chain",
+      "title": "Agentic Supply Chains, Human-Led — campaign",
+      "type": "campaign",
+      "modes": [
+        "show",
+        "learn"
+      ],
+      "description": "Joint AIIS × Supply Chain Transformation campaign, launched July 2026: all six supply chain domains as one AI-driven decision system, with launch webinar replay, collaterals and a ContentPlus folder.",
+      "purpose": "Framing a supply chain conversation with approved campaign material.",
+      "whatYouCanDo": "Use the campaign page, collaterals and launch replay to prepare the conversation.",
+      "capabilities": [
+        "supply-chain",
+        "selling-positioning"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "Activation Hub campaign page",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/docs/campaign-agentic-supply-chain.html",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [
+        "banking-financial-services",
+        "government",
+        "telecommunications"
+      ],
+      "clientProblems": [],
+      "intents": [
+        "prepare_conversation",
+        "propose"
+      ],
+      "clientMoments": [
+        "executive conversation",
+        "first conversation"
+      ],
+      "prerequisites": [
+        "IBM w3 sign-in (ContentPlus)"
+      ],
+      "caveats": [],
+      "keywords": [
+        "cio",
+        "cto",
+        "c-level",
+        "battlecard",
+        "hybrid ai platform",
+        "messaging"
+      ],
+      "actions": [
+        {
+          "label": "View growth campaign",
+          "url": "https://w3.ibm.com/consulting/contentplus/campaigns/693979ad09c87b4a20653f44"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "campaign-growth-hybrid-ai",
+      "title": "Build and Operate Hybrid-AI Platforms with Enterprise Advantage — growth campaign",
+      "type": "campaign",
+      "modes": [
+        "show",
+        "learn"
+      ],
+      "description": "IBM Consulting growth campaign positioning EA as an asset-based service that helps clients build and operate their own internal hybrid AI platform at scale. Targeted at CIOs, C-level business leaders and CTOs across Banking, Government and Telco. Includes messaging frameworks, client-facing collateral, battlecards and activation guides.",
+      "purpose": "Executive-level positioning of Enterprise Advantage for Banking, Government or Telco clients.",
+      "whatYouCanDo": "Use the messaging framework, battlecards and client-facing collateral in an executive conversation.",
+      "capabilities": [
+        "enterprise-advantage",
+        "selling-positioning"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM ContentPlus",
+      "url": "https://w3.ibm.com/consulting/contentplus/campaigns/693979ad09c87b4a20653f44",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "prepare_conversation"
+      ],
+      "clientMoments": [],
+      "prerequisites": [],
+      "caveats": [],
+      "keywords": [
+        "sap",
+        "campaign"
+      ],
+      "actions": [
+        {
+          "label": "See Global Campaigns in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": {
+        "name": "Francesco Brenna",
+        "email": null,
+        "role": "AIIS campaign lead"
+      },
+      "status": "coming-soon",
+      "lastValidated": null,
+      "id": "campaign-sap",
+      "title": "Agentic SAP, Human-Led — campaign",
+      "type": "campaign",
+      "modes": [
+        "show"
+      ],
+      "description": "Joint go-to-market campaign (AIIS × SAP Practice). Announced on the Activation Hub as coming soon — no content is published yet.",
+      "purpose": "Future campaign material — not yet available.",
+      "whatYouCanDo": "Contact Francesco Brenna (AIIS) for status.",
+      "capabilities": [
+        "selling-positioning"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "Activation Hub — Global Campaigns",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "prepare_conversation"
+      ],
+      "clientMoments": [],
+      "prerequisites": [],
+      "caveats": [],
+      "keywords": [
+        "hr",
+        "campaign"
+      ],
+      "actions": [
+        {
+          "label": "See Global Campaigns in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": {
+        "name": "Francesco Brenna",
+        "email": null,
+        "role": "AIIS campaign lead"
+      },
+      "status": "coming-soon",
+      "lastValidated": null,
+      "id": "campaign-hr",
+      "title": "Agentic HR, Human-Led — campaign",
+      "type": "campaign",
+      "modes": [
+        "show"
+      ],
+      "description": "Joint go-to-market campaign (AIIS × HR Transformation). Announced on the Activation Hub as coming soon — no content is published yet.",
+      "purpose": "Future campaign material — not yet available.",
+      "whatYouCanDo": "Contact Francesco Brenna (AIIS) for status.",
+      "capabilities": [
+        "selling-positioning"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "Activation Hub — Global Campaigns",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "prepare_conversation"
+      ],
+      "clientMoments": [],
+      "prerequisites": [],
+      "caveats": [],
+      "keywords": [
+        "procurement",
+        "campaign"
+      ],
+      "actions": [
+        {
+          "label": "See Global Campaigns in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": {
+        "name": "Francesco Brenna",
+        "email": null,
+        "role": "AIIS campaign lead"
+      },
+      "status": "coming-soon",
+      "lastValidated": null,
+      "id": "campaign-procurement",
+      "title": "Agentic Procurement, Human-Led — campaign",
+      "type": "campaign",
+      "modes": [
+        "show"
+      ],
+      "description": "Joint go-to-market campaign (AIIS × Procurement Transformation). Announced on the Activation Hub as coming soon — no content is published yet.",
+      "purpose": "Future campaign material — not yet available.",
+      "whatYouCanDo": "Contact Francesco Brenna (AIIS) for status.",
+      "capabilities": [
+        "selling-positioning",
+        "procure-to-pay"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "Activation Hub — Global Campaigns",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "prepare_conversation",
+        "propose",
+        "demonstrate"
+      ],
+      "clientMoments": [
+        "client meeting",
+        "proposal"
+      ],
+      "prerequisites": [
+        "IBM SharePoint sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "deck",
+        "one-pager",
+        "collateral",
+        "latest deck",
+        "final folder",
+        "slides"
+      ],
+      "actions": [
+        {
+          "label": "Open folder in SharePoint",
+          "url": "https://ibm-my.sharepoint.com/:f:/p/francesco_brenna_ch/IgAT0dCjVqYkQ6Uz6IkLdmsGAfxUUvLbZrGXq9E6IE-kcVA?e=sLo2ne"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "ea-resource-library",
+      "title": "EA Resource Library",
+      "type": "collateral",
+      "modes": [
+        "show"
+      ],
+      "description": "All approved sales collaterals, decks, one-pagers and supporting materials for Enterprise Advantage, maintained in real time by the team.",
+      "purpose": "Finding the latest approved deck or one-pager.",
+      "whatYouCanDo": "Browse the SharePoint folder and download the current version.",
+      "capabilities": [
+        "enterprise-advantage",
+        "selling-positioning"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM SharePoint",
+      "url": "https://ibm-my.sharepoint.com/:f:/p/francesco_brenna_ch/IgAT0dCjVqYkQ6Uz6IkLdmsGAfxUUvLbZrGXq9E6IE-kcVA?e=sLo2ne",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise",
+        "prepare_conversation"
+      ],
+      "clientMoments": [
+        "workshop",
+        "discovery"
+      ],
+      "prerequisites": [
+        "IBM Box access"
+      ],
+      "caveats": [],
+      "keywords": [
+        "playbook",
+        "client context",
+        "workshop"
+      ],
+      "actions": [
+        {
+          "label": "Open playbook",
+          "url": "https://ibm.box.com/s/1ib7mqj670xdp67uoncqvwved98xdegp"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "playbook-client-context",
+      "title": "Consolidated Client Context & Context Studio & Process Studio Playbook",
+      "type": "guide",
+      "modes": [
+        "learn",
+        "build"
+      ],
+      "description": "Playbook for consolidating client context and using Context Studio and Process Studio together on an engagement.",
+      "purpose": "Preparing client context before a workshop or demo build.",
+      "whatYouCanDo": "Follow the playbook to structure client context in Context Studio and Process Studio.",
+      "capabilities": [
+        "context-studio",
+        "process-studio"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Box",
+      "url": "https://ibm.box.com/s/1ib7mqj670xdp67uoncqvwved98xdegp",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "build_customise",
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM Consulting Advantage access"
+      ],
+      "caveats": [],
+      "keywords": [
+        "ica",
+        "launchpad",
+        "advantage core"
+      ],
+      "actions": [
+        {
+          "label": "Open launchpad",
+          "url": "https://servicesessentials.ibm.com/launchpad"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "ica-launchpad",
+      "title": "IBM Consulting Advantage (launchpad)",
+      "type": "platform",
+      "modes": [
+        "build"
+      ],
+      "description": "The main IBM Consulting Advantage platform launchpad — the entry point to the Advantage Core.",
+      "purpose": "Working hands-on in the platform.",
+      "whatYouCanDo": "Open the platform and work in it directly.",
+      "capabilities": [
+        "enterprise-advantage"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Consulting Advantage",
+      "url": "https://servicesessentials.ibm.com/launchpad",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "demonstrate",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM Consulting Advantage access"
+      ],
+      "caveats": [],
+      "keywords": [
+        "marketplace",
+        "pre-built",
+        "agentic apps"
+      ],
+      "actions": [
+        {
+          "label": "Open Marketplace",
+          "url": "https://servicesessentials.ibm.com/launchpad/marketplace"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "advantage-marketplace",
+      "title": "Advantage Marketplace",
+      "type": "platform",
+      "modes": [
+        "build"
+      ],
+      "description": "Browse pre-built Agentic App templates for Business, IT and Industry on IBM Consulting Advantage.",
+      "purpose": "Working hands-on in the platform.",
+      "whatYouCanDo": "Browse pre-built Agentic App templates.",
+      "capabilities": [
+        "enterprise-advantage",
+        "agentic-app-studio",
+        "demo-building"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Consulting Advantage",
+      "url": "https://servicesessentials.ibm.com/launchpad/marketplace",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "build_customise",
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM Consulting Advantage access"
+      ],
+      "caveats": [],
+      "keywords": [
+        "build agents",
+        "agentic app"
+      ],
+      "actions": [
+        {
+          "label": "Open App Studio",
+          "url": "https://servicesessentials.ibm.com/launchpad/agenticapps"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "agentic-app-studio",
+      "title": "Agentic App Studio",
+      "type": "platform",
+      "modes": [
+        "build"
+      ],
+      "description": "Build, configure and deploy Agentic Apps on the IBM Consulting Advantage Core.",
+      "purpose": "Working hands-on in the platform.",
+      "whatYouCanDo": "Open the platform and work in it directly.",
+      "capabilities": [
+        "agentic-app-studio"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Consulting Advantage",
+      "url": "https://servicesessentials.ibm.com/launchpad/agenticapps",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "build_customise",
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM Consulting Advantage access"
+      ],
+      "caveats": [],
+      "keywords": [
+        "context",
+        "schema",
+        "knowledge graph"
+      ],
+      "actions": [
+        {
+          "label": "Open Context Studio",
+          "url": "https://contextstudio.servicesessentials.ibm.com/?teamName=Context%20Studio%20Alpha&teamId=69a1835fb6daa5687385b9d5"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "context-studio",
+      "title": "Context Studio",
+      "type": "platform",
+      "modes": [
+        "build"
+      ],
+      "description": "Create schemas, conceptual models and domain data that give agents enterprise-grade client context.",
+      "purpose": "Working hands-on in the platform.",
+      "whatYouCanDo": "Open the platform and work in it directly.",
+      "capabilities": [
+        "context-studio"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Consulting Advantage",
+      "url": "https://contextstudio.servicesessentials.ibm.com/?teamName=Context%20Studio%20Alpha&teamId=69a1835fb6daa5687385b9d5",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "build_customise",
+        "prepare_conversation",
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM Consulting Advantage access"
+      ],
+      "caveats": [],
+      "keywords": [
+        "process mining",
+        "blueprint",
+        "workshop"
+      ],
+      "actions": [
+        {
+          "label": "Jump right in",
+          "url": "https://w3.ibm.com/services/lighthouse/knowledge/videos/147185"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "process-studio",
+      "title": "Process Studio",
+      "type": "platform",
+      "modes": [
+        "build"
+      ],
+      "description": "IBM Consulting's process mining and re-imagination capability — ground, assess, re-imagine and simulate. Generally available on the global instance.",
+      "purpose": "Running process discovery and agentic re-imagination with a client.",
+      "whatYouCanDo": "Ground client context, ingest documents, generate an agentic blueprint and simulate it.",
+      "capabilities": [
+        "process-studio"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Lighthouse (entry link used by the Hub)",
+      "url": "https://w3.ibm.com/services/lighthouse/knowledge/videos/147185",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "build_customise",
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Alpha early access"
+      ],
+      "caveats": [],
+      "keywords": [
+        "workbench",
+        "pdlc",
+        "autopilot"
+      ],
+      "actions": [
+        {
+          "label": "View docs",
+          "url": "https://pages.github.ibm.com/ibm-product-workbench/pwb-user-facing-docsite/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "alpha",
+      "lastValidated": null,
+      "id": "product-workbench",
+      "title": "Product Workbench (docs)",
+      "type": "platform",
+      "modes": [
+        "build"
+      ],
+      "description": "IBM Product Workbench documentation site. Alpha — early access is underway.",
+      "purpose": "Working hands-on in the platform.",
+      "whatYouCanDo": "Open the platform and work in it directly.",
+      "capabilities": [
+        "product-workbench",
+        "agentic-pdlc"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise Pages",
+      "url": "https://pages.github.ibm.com/ibm-product-workbench/pwb-user-facing-docsite/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM Consulting Advantage access"
+      ],
+      "caveats": [],
+      "keywords": [
+        "eaef",
+        "methodology",
+        "method",
+        "delivery"
+      ],
+      "actions": [
+        {
+          "label": "Open EAEF",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-engineering-framework/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "ea-engineering-framework",
+      "title": "EA Engineering Framework (EAEF)",
+      "type": "platform",
+      "modes": [
+        "build"
+      ],
+      "description": "The Enterprise Advantage Engineering Framework — methodology and engineering guidance for EA delivery.",
+      "purpose": "Working hands-on in the platform.",
+      "whatYouCanDo": "Open the platform and work in it directly.",
+      "capabilities": [
+        "enterprise-advantage",
+        "agentic-pdlc"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise Pages",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-engineering-framework/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "prepare_conversation"
+      ],
+      "clientMoments": [
+        "workshop"
+      ],
+      "prerequisites": [
+        "IBM w3 sign-in to pages.github.ibm.com"
+      ],
+      "caveats": [],
+      "keywords": [
+        "user guide",
+        "how to",
+        "workshop"
+      ],
+      "actions": [
+        {
+          "label": "Read the User Guide",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/docs/process-studio-use-guide.html"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "ps-user-guide",
+      "title": "Process Studio User Guide",
+      "type": "guide",
+      "modes": [
+        "learn"
+      ],
+      "description": "End-to-end guide for consultants: Ground (client context), Assess (document ingestion), Re-imagine (agentic blueprint), Simulate (blueprint simulation) and hand-off to a coding agent.",
+      "purpose": "Understanding Process Studio well enough to run it in a client workshop.",
+      "whatYouCanDo": "Read the guide section by section before you use Process Studio with a client.",
+      "capabilities": [
+        "process-studio"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "Activation Hub docs (GitHub Enterprise Pages)",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/docs/process-studio-use-guide.html",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM SharePoint sign-in",
+        "Platform access to follow along"
+      ],
+      "caveats": [],
+      "keywords": [
+        "guided lab",
+        "hands-on",
+        "self-paced"
+      ],
+      "actions": [
+        {
+          "label": "Download guided lab",
+          "url": "https://ibm-my.sharepoint.com/:p:/p/agnes_baker_hu/IQBMTuMs_YoXSafqvvJJVJ5OAR_YkusEWbsslE3HZoFZCjw?e=9taOwD"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "lab-process-studio",
+      "title": "Process Studio — Guided Lab",
+      "type": "lab",
+      "modes": [
+        "learn"
+      ],
+      "description": "Step-by-step guided lab (PPTX) — a self-paced walkthrough of Process Studio.",
+      "purpose": "Getting hands-on fluency at your own pace before using the platform with a client.",
+      "whatYouCanDo": "Download the PPTX and work through the steps.",
+      "capabilities": [
+        "process-studio"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM SharePoint",
+      "url": "https://ibm-my.sharepoint.com/:p:/p/agnes_baker_hu/IQBMTuMs_YoXSafqvvJJVJ5OAR_YkusEWbsslE3HZoFZCjw?e=9taOwD",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM SharePoint sign-in",
+        "Platform access to follow along"
+      ],
+      "caveats": [],
+      "keywords": [
+        "guided lab",
+        "hands-on",
+        "self-paced"
+      ],
+      "actions": [
+        {
+          "label": "Download guided lab",
+          "url": "https://ibm-my.sharepoint.com/:p:/p/agnes_baker_hu/IQBFr7IatwOvQ6pR9L-jPkrgAZAxvWca1an5UNE-s7MsJy4?e=YTv6z2"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "lab-context-studio",
+      "title": "Context Studio — Guided Lab",
+      "type": "lab",
+      "modes": [
+        "learn"
+      ],
+      "description": "Step-by-step guided lab (PPTX) — a self-paced walkthrough of Context Studio.",
+      "purpose": "Getting hands-on fluency at your own pace before using the platform with a client.",
+      "whatYouCanDo": "Download the PPTX and work through the steps.",
+      "capabilities": [
+        "context-studio"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM SharePoint",
+      "url": "https://ibm-my.sharepoint.com/:p:/p/agnes_baker_hu/IQBFr7IatwOvQ6pR9L-jPkrgAZAxvWca1an5UNE-s7MsJy4?e=YTv6z2",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM SharePoint sign-in",
+        "Platform access to follow along"
+      ],
+      "caveats": [],
+      "keywords": [
+        "guided lab",
+        "hands-on",
+        "self-paced"
+      ],
+      "actions": [
+        {
+          "label": "Download guided lab",
+          "url": "https://ibm-my.sharepoint.com/:p:/p/agnes_baker_hu/IQBL04FvPTrHTLo4vlZSpnrtAYkPBcEBseE4qb_dDMdrhMI?e=6mshzH"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "lab-ica",
+      "title": "ICA — Guided Lab",
+      "type": "lab",
+      "modes": [
+        "learn"
+      ],
+      "description": "Step-by-step guided lab (PPTX) — a self-paced walkthrough of ICA.",
+      "purpose": "Getting hands-on fluency at your own pace before using the platform with a client.",
+      "whatYouCanDo": "Download the PPTX and work through the steps.",
+      "capabilities": [
+        "enterprise-advantage",
+        "agentic-app-studio"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM SharePoint",
+      "url": "https://ibm-my.sharepoint.com/:p:/p/agnes_baker_hu/IQBL04FvPTrHTLo4vlZSpnrtAYkPBcEBseE4qb_dDMdrhMI?e=6mshzH",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM SharePoint sign-in",
+        "Platform access to follow along"
+      ],
+      "caveats": [],
+      "keywords": [
+        "guided lab",
+        "hands-on",
+        "self-paced"
+      ],
+      "actions": [
+        {
+          "label": "Download guided lab",
+          "url": "https://ibm-my.sharepoint.com/:p:/p/agnes_baker_hu/IQAcPPM7a9VQS50b5icOlY7jAR_p6t_y0cK6HNOP-zfptQI?e=VYKPXt"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "lab-agentic-pdlc",
+      "title": "Agentic PDLC — Guided Lab",
+      "type": "lab",
+      "modes": [
+        "learn"
+      ],
+      "description": "Step-by-step guided lab (PPTX) — a self-paced walkthrough of Agentic PDLC.",
+      "purpose": "Getting hands-on fluency at your own pace before using the platform with a client.",
+      "whatYouCanDo": "Download the PPTX and work through the steps.",
+      "capabilities": [
+        "agentic-pdlc"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM SharePoint",
+      "url": "https://ibm-my.sharepoint.com/:p:/p/agnes_baker_hu/IQAcPPM7a9VQS50b5icOlY7jAR_p6t_y0cK6HNOP-zfptQI?e=VYKPXt",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "github.ibm.com access",
+        "Local development environment"
+      ],
+      "caveats": [],
+      "keywords": [
+        "labs",
+        "exercises",
+        "hands-on"
+      ],
+      "actions": [
+        {
+          "label": "Open EA Academy",
+          "url": "http://ibm.biz/enterprise-advantage-academy"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "ea-academy",
+      "title": "Enterprise Advantage Academy (lab repositories)",
+      "type": "lab",
+      "modes": [
+        "learn",
+        "build"
+      ],
+      "description": "Curated GitHub repositories with guided exercises, sample assets and reference implementations for Enterprise Advantage.",
+      "purpose": "Practising on real scenarios before a client engagement.",
+      "whatYouCanDo": "Clone a lab repository and work through the exercises.",
+      "capabilities": [
+        "enterprise-advantage",
+        "agentic-app-studio"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "ibm.biz",
+      "url": "http://ibm.biz/enterprise-advantage-academy",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in to pages.github.ibm.com"
+      ],
+      "caveats": [],
+      "keywords": [
+        "coding agents",
+        "labs",
+        "guild"
+      ],
+      "actions": [
+        {
+          "label": "Open ICA Labs",
+          "url": "https://pages.github.ibm.com/guild-of-coding-agents-at-consulting/documentation/docs/enablement-materials/ica-labs/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "ica-labs",
+      "title": "ICA Labs — Enablement Materials",
+      "type": "lab",
+      "modes": [
+        "learn",
+        "build"
+      ],
+      "description": "Enablement materials and labs from the Guild of Coding Agents at Consulting.",
+      "purpose": "Learning to work with coding agents on IBM Consulting Advantage.",
+      "whatYouCanDo": "Work through the ICA Labs documentation.",
+      "capabilities": [
+        "agentic-pdlc",
+        "enterprise-advantage"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "GitHub Enterprise Pages",
+      "url": "https://pages.github.ibm.com/guild-of-coding-agents-at-consulting/documentation/docs/enablement-materials/ica-labs/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM YourLearning account"
+      ],
+      "caveats": [],
+      "keywords": [
+        "learning path",
+        "modules",
+        "certification"
+      ],
+      "actions": [
+        {
+          "label": "Open in YourLearning",
+          "url": "https://yourlearning.ibm.com/activity/PLAN-1CA781795174"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "yourlearning-plan",
+      "title": "Enterprise Advantage Learning Plan",
+      "type": "course",
+      "modes": [
+        "learn"
+      ],
+      "description": "Official structured IBM YourLearning plan covering all EA modules in order, with progress tracking.",
+      "purpose": "Building structured EA knowledge over time.",
+      "whatYouCanDo": "Enrol and complete the modules in order.",
+      "capabilities": [
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM YourLearning",
+      "url": "https://yourlearning.ibm.com/activity/PLAN-1CA781795174",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "recordings",
+        "videos",
+        "archive"
+      ],
+      "actions": [
+        {
+          "label": "Open collection",
+          "url": "https://w3.ibm.com/services/lighthouse/collections/88177"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "lighthouse-collection",
+      "title": "EA Lighthouse Collection (all recordings)",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "The full IBM Lighthouse archive of recorded Enterprise Advantage sessions.",
+      "purpose": "Finding a recording that isn't listed individually.",
+      "whatYouCanDo": "Search the collection by session title.",
+      "capabilities": [
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/collections/88177",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "prepare_conversation"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM Slack access"
+      ],
+      "caveats": [],
+      "keywords": [
+        "help",
+        "question",
+        "community",
+        "expert"
+      ],
+      "actions": [
+        {
+          "label": "Open in Slack",
+          "url": "https://ibm.enterprise.slack.com/archives/C0A3H0E11HT"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "community-slack",
+      "title": "EA Community on Slack (#enterprise-advantage)",
+      "type": "community",
+      "modes": [
+        "learn"
+      ],
+      "description": "Connect with the EA community in real time — ask questions, share wins and get updates from the EA Enablement Team.",
+      "purpose": "Asking a practitioner who has done it before.",
+      "whatYouCanDo": "Post your question in #enterprise-advantage.",
+      "capabilities": [
+        "enterprise-advantage"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM Slack",
+      "url": "https://ibm.enterprise.slack.com/archives/C0A3H0E11HT",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "prepare_conversation",
+        "propose"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "battlecard",
+        "collateral",
+        "messaging"
+      ],
+      "actions": [
+        {
+          "label": "Open ContentPlus",
+          "url": "https://w3.ibm.com/consulting/contentplus"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "contentplus",
+      "title": "IBM ContentPlus portal",
+      "type": "collateral",
+      "modes": [
+        "show"
+      ],
+      "description": "IBM Consulting ContentPlus — home of campaign assets including messaging frameworks, client-facing collateral, battlecards and activation guides.",
+      "purpose": "Finding approved campaign collateral.",
+      "whatYouCanDo": "Search ContentPlus for campaign assets.",
+      "capabilities": [
+        "selling-positioning"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM ContentPlus",
+      "url": "https://w3.ibm.com/consulting/contentplus",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "prepare_conversation"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "finance",
+        "webinar",
+        "positioning"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/gbslearn/tubes/replay.html?documentId=10585678"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-finance-launch",
+      "title": "Redefine Finance with Agentic AI — Launch Webinar",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Launch webinar for the joint AIIS × Finance Strategy & Transformation campaign, powered by IBM Enterprise Advantage. Covers the full value proposition, client positioning, and how to use demos and assets from your first client meeting.",
+      "purpose": "Preparing a Finance Transformation client conversation, including which demos and assets to use.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "finance-transformation",
+        "selling-positioning"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM YourLearning / GBS Learn replay",
+      "url": "https://w3.ibm.com/services/gbslearn/tubes/replay.html?documentId=10585678",
+      "date": "Jul 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "prepare_conversation"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "supply chain",
+        "webinar"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/gbslearn/tubes/replay.html?documentId=10585674"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-supply-chain-launch",
+      "title": "Agentic Supply Chains, Human-Led — Launch Webinar",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Launch webinar for the joint AIIS × Supply Chain Transformation campaign. Covers the value proposition, client positioning and how to use demos and assets from your first client meeting.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "supply-chain",
+        "selling-positioning"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM YourLearning / GBS Learn replay",
+      "url": "https://w3.ibm.com/services/gbslearn/tubes/replay.html?documentId=10585674",
+      "date": "Jul 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "prepare_conversation"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "assets",
+        "engagement"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://ec.yourlearning.ibm.com/w3/playback/10587824"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-ps-cs-assets",
+      "title": "Process Studio & Context Studio — Assets You Can Use on Your Next Engagement",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "How Process Studio and Context Studio can accelerate engagement work and speed up time to value for clients.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "process-studio",
+        "context-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM YourLearning / GBS Learn replay",
+      "url": "https://ec.yourlearning.ibm.com/w3/playback/10587824",
+      "date": "Aug 2026",
+      "duration": "1 hr",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "demonstrate"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "launch",
+        "overview"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/147166"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-ps-launch",
+      "title": "Process Studio — Launch Video",
+      "type": "recording",
+      "modes": [
+        "learn",
+        "show"
+      ],
+      "description": "Official launch video for Process Studio — IBM Consulting's process mining and re-imagination capability, now generally available on the global instance.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "process-studio"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/147166",
+      "date": "Jul 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "prepare_conversation"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "how to",
+        "getting started",
+        "tutorial"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/147148"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-ps-howto",
+      "title": "Process Studio — How To Use It",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Step-by-step guide covering projects, grounding, process frameworks, ingest, analysis, blueprints, artefact generation and simulation. The essential walkthrough for practitioners getting started.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "process-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/147148",
+      "date": "Jul 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "deep dive",
+        "webinar"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/146799"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-ps-deepdive-jun",
+      "title": "Process Studio Deep Dive — June 2026",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Live 90-minute deep dive into Process Studio covering key features, flows and real-world use cases.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "process-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/146799",
+      "date": "Jun 2026",
+      "duration": "90 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "prepare_conversation"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "walkthrough",
+        "quick"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/145485"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-ps-walkthrough",
+      "title": "Process Studio Walkthrough",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "A step-by-step guide to using Process Studio — the key features and flows to get you up and running quickly.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "process-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "minutes",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/145485",
+      "date": "May 2026",
+      "duration": "9 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "demonstrate",
+        "prepare_conversation"
+      ],
+      "clientMoments": [
+        "first conversation"
+      ],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "overview",
+        "intro",
+        "start here"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/147058"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-ea-60s",
+      "title": "Enterprise Advantage in 60 Seconds",
+      "type": "recording",
+      "modes": [
+        "show",
+        "learn"
+      ],
+      "description": "The essential 60-second overview of IBM Enterprise Advantage — what it is, what it does and why it matters. A crisp way to explain it.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "enterprise-advantage",
+        "selling-positioning"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/147058",
+      "date": "Jun 2026",
+      "duration": "1 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "propose",
+        "prepare_conversation",
+        "demonstrate"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "pitch",
+        "board",
+        "live demo",
+        "c-level"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/146662"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-pitching-ea",
+      "title": "Pitching Enterprise Advantage to Your Client",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "A 40-minute session on pitching EA at any client level — including a real board-level pitch for ASML presenting the full platform end-to-end without slides, using live demos.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "selling-positioning",
+        "enterprise-advantage",
+        "demo-building"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/146662",
+      "date": "Jun 2026",
+      "duration": "40 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/146619"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-sme-day3-control-tower",
+      "title": "EA SME Enablement Series — Day 3: Control Tower & Agentic App Studio cont.",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Closing session covering Control Tower and a continued Agentic App Studio deep dive with Q&A.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "observability-governance",
+        "agentic-app-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/146619",
+      "date": "Jun 2026",
+      "duration": "1 hr",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "brownfield"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/146618"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-sme-day3-pwb-qa",
+      "title": "EA SME Enablement Series — Day 3: IBM Product Workbench Q&A",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Q&A on IBM Product Workbench — brownfield projects, autopilot modes, deployment and client engagement scenarios.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "product-workbench",
+        "agentic-pdlc"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/146618",
+      "date": "Jun 2026",
+      "duration": "30 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/146617"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-sme-day2-app-studio",
+      "title": "EA SME Enablement Series — Day 2: Agentic App Studio Deep Dive",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Deep dive into Agentic App Studio: agent creation, MCP/A2A orchestration, multi-cloud reference architectures, live demo and hands-on breakouts.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "agentic-app-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/146617",
+      "date": "Jun 2026",
+      "duration": "1 hr",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/146616"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-sme-day2-pwb",
+      "title": "EA SME Enablement Series — Day 2: IBM Product Workbench Deep Dive",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Product Workbench walkthrough: project setup, connector configuration, autopilot execution modes and the O2C client use case demo.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "product-workbench",
+        "order-to-cash"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/146616",
+      "date": "Jun 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/146615"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-sme-day1-cs-ps",
+      "title": "EA SME Enablement Series — Day 1: Context Studio & Process Studio Deep Dive",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Context Studio and Process Studio deep dive: schema-based context, knowledge graphs, cognitive deconstruction methodology and hands-on blueprint exercises.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "context-studio",
+        "process-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/146615",
+      "date": "Jun 2026",
+      "duration": "2.5 hrs",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "demonstrate",
+        "learn"
+      ],
+      "clientMoments": [
+        "first conversation",
+        "client demo"
+      ],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "demo",
+        "end-to-end",
+        "short"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/146142"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-eaef-e2e-demo",
+      "title": "The IBM Enterprise Advantage Framework: End-to-End Demo",
+      "type": "recording",
+      "modes": [
+        "show",
+        "learn"
+      ],
+      "description": "A concise 3-minute end-to-end demo of the Enterprise Advantage Framework — how the platform components work together to accelerate enterprise AI transformation.",
+      "purpose": "Showing the whole platform story quickly, or learning it before a meeting.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "enterprise-advantage",
+        "demo-building"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/146142",
+      "date": "May 2026",
+      "duration": "3 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "client context",
+        "how to"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/145885"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-cs-client-content",
+      "title": "Create Context Studio content for a client engagement",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "5-minute guide to creating Context Studio content for a real client engagement — schemas, conceptual models and domain data.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "context-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "minutes",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/145885",
+      "date": "May 2026",
+      "duration": "5 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://ec.yourlearning.ibm.com/w3/playback/10572899"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-ps-webinar-may",
+      "title": "Enterprise Advantage Webinar Series — Process Studio Deep Dive",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Live webinar recording — a deep dive into Process Studio covering key features, flows and real-world use cases.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "process-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM YourLearning / GBS Learn replay",
+      "url": "https://ec.yourlearning.ibm.com/w3/playback/10572899",
+      "date": "May 2026",
+      "duration": "1 hr",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "prepare_conversation",
+        "propose"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "watsonx orchestrate",
+        "wxo",
+        "comparison",
+        "positioning"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://ec.yourlearning.ibm.com/w3/playback/10569081"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-wxo-positioning",
+      "title": "watsonx Orchestrate and Enterprise Advantage: how to position with your client",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Compares watsonx Orchestrate to Enterprise Advantage and explains which to recommend based on the client's needs.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "selling-positioning",
+        "partner-ecosystem",
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM YourLearning / GBS Learn replay",
+      "url": "https://ec.yourlearning.ibm.com/w3/playback/10569081",
+      "date": "May 2026",
+      "duration": "1 hr",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "walkthrough"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/spotlight/videos/145534"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-cs-walkthrough",
+      "title": "Context Studio Walkthrough",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Step-by-step guide to Context Studio — creating schemas, conceptual models and domain data for enterprise-grade agent context.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "context-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "minutes",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/spotlight/videos/145534",
+      "date": "May 2026",
+      "duration": "11 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "propose"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "sellers",
+        "updates"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/145498"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-sellers-updates",
+      "title": "Enterprise Advantage — Latest Updates for Sellers",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Virtual session for APAC sellers with the latest EA updates relevant for all sellers across Geos.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "selling-positioning",
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/145498",
+      "date": "May 2026",
+      "duration": "2 hr",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "walkthrough",
+        "build"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/145487"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-app-studio-walkthrough",
+      "title": "Agentic App Studio Walkthrough",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Step-by-step guide to designing, building and deploying Agentic Apps on the IBM Consulting Advantage Core.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "agentic-app-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "minutes",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/145487",
+      "date": "May 2026",
+      "duration": "14 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "demonstrate",
+        "learn",
+        "prepare_conversation"
+      ],
+      "clientMoments": [
+        "client demo",
+        "first conversation"
+      ],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "demo",
+        "client case",
+        "end-to-end"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/145472"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-power-of-ea",
+      "title": "The Power of Enterprise Advantage",
+      "type": "recording",
+      "modes": [
+        "show",
+        "learn"
+      ],
+      "description": "The end-to-end flow of Enterprise Advantage through a real-life client case — a demo of all the Advantage Core capabilities.",
+      "purpose": "Showing a client the full EA flow through a real case when you don't have your own demo yet.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "enterprise-advantage",
+        "demo-building"
+      ],
+      "readiness": "ready-to-use",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/145472",
+      "date": "Apr 2026",
+      "duration": "15 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "propose"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "pricing",
+        "commercial model",
+        "engagement model",
+        "proposal"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/gbslearn/tubes/replay.html?documentId=10553775"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-how-to-sell-ea",
+      "title": "How to sell EA — Webinar recording",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Engagement model, commercial model, pricing and client examples including Hubbell.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "selling-positioning"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM YourLearning / GBS Learn replay",
+      "url": "https://w3.ibm.com/services/gbslearn/tubes/replay.html?documentId=10553775",
+      "date": "Feb 2026",
+      "duration": "60 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "pdlc",
+        "software delivery"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/144149"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-pdlc-sme",
+      "title": "Agentic PDLC Virtual SME Enablement",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "3-hour deep dive on Agentic PDLC covering Context Studio, Agentic PDLC components and hands-on practice.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "agentic-pdlc",
+        "context-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/144149",
+      "date": "Feb 2026",
+      "duration": "180 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [
+        "banking-financial-services"
+      ],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "docuflow",
+        "financial services",
+        "documents"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/143866"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-docuflow",
+      "title": "Docuflow–AI: Technical Training",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "2-hour session for the US Financial Services team on the DocuFlow agentic application.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "document-processing"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/143866",
+      "date": "Feb 2026",
+      "duration": "120 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "arize",
+        "observability"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/144449"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-arize",
+      "title": "Introducing Arize Phoenix",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "1-hour deep dive on Arize observability capabilities integrated into the EA Control Tower.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "observability-governance",
+        "partner-ecosystem"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/144449",
+      "date": "Mar 2026",
+      "duration": "60 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "prepare_conversation"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "introduction",
+        "value proposition"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/143367"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-intro-ea",
+      "title": "Introducing IBM Enterprise Advantage",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Introduction to the Enterprise Advantage value proposition for Business and IT Transformation.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "enterprise-advantage",
+        "selling-positioning"
+      ],
+      "readiness": "attend",
+      "timeToValue": "minutes",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/143367",
+      "date": "Jan 2026",
+      "duration": "22 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [
+        "Opens the Lighthouse collection — find this session by title."
+      ],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/collections/88177"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-first-agentic-app",
+      "title": "Building your first Agentic App",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Hands-on guide to building, configuring and deploying your first Agentic App on the ICA Platform.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "agentic-app-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/collections/88177",
+      "date": "Mar 2026",
+      "duration": "45 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [
+        "Opens the Lighthouse collection — find this session by title."
+      ],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/collections/88177"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-deepagents",
+      "title": "DeepAgents & Coding Agents explained",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Overview of DeepAgents and Coding Agents — types, skills, composition and workflow orchestration.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "agentic-pdlc"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/collections/88177",
+      "date": "Mar 2026",
+      "duration": "31 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [
+        "consumer-goods",
+        "industrial"
+      ],
+      "clientProblems": [],
+      "intents": [
+        "prepare_conversation",
+        "propose",
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [
+        "Opens the Lighthouse collection — find this session by title."
+      ],
+      "keywords": [
+        "case study",
+        "references",
+        "proof points",
+        "client stories"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/collections/88177"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-client-stories",
+      "title": "EA client stories: Hubbell, Heineken",
+      "type": "recording",
+      "modes": [
+        "show",
+        "learn"
+      ],
+      "description": "Real client success stories showcasing EA implementations across CPG and industrial sectors.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "selling-positioning",
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "none",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/collections/88177",
+      "date": "Jan 2026",
+      "duration": "41 min",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "propose"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "scope",
+        "solutioning",
+        "proposal"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/144676"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-solutioning",
+      "title": "Enterprise Advantage Deep Dive for Solutioning",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "How to position, scope and solution Enterprise Advantage engagements.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "selling-positioning",
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "basic",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/144676",
+      "date": "Q1 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/144287"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-ica-sme",
+      "title": "ICA SME Enablement",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "ICA platform architecture, components and deployment options.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/144287",
+      "date": "Q1 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "blueprint",
+        "deploy"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/144424"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-blueprint-to-app",
+      "title": "Enterprise Advantage: Blueprint-to-app",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Tutorial: end-to-end walkthrough from an EA blueprint to a deployed agentic app on the platform.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "process-studio",
+        "agentic-app-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/144424",
+      "date": "Q1 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/144428"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-pro-code-agents",
+      "title": "Pro-code Agents in Enterprise Advantage",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "How to build and deploy pro-code agents within the Enterprise Advantage platform.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "agentic-app-studio",
+        "agentic-pdlc"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "advanced",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/144428",
+      "date": "Q1 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "ai-first development",
+        "best practices"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/143901"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-ai-first-dev-1",
+      "title": "AI-First Development Best Practices – Part 1",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Best practices for AI-first development on the Advantage Core — Part 1.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "agentic-pdlc"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/143901",
+      "date": "Q1 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [
+        "ai-first development",
+        "best practices"
+      ],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/143909"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-ai-first-dev-2",
+      "title": "AI-First Development Best Practices – Part 2",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Best practices for AI-first development on the Advantage Core — Part 2.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "agentic-pdlc"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/143909",
+      "date": "Q1 2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/148250"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-pwb-session-1",
+      "title": "Product Workbench Alpha — enablement session 1",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Enablement session for the Product Workbench alpha early-access programme.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "product-workbench"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/148250",
+      "date": "2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "IBM w3 sign-in"
+      ],
+      "caveats": [],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Watch recording",
+          "url": "https://w3.ibm.com/services/lighthouse/videos/148681"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "rec-pwb-session-2",
+      "title": "Product Workbench Alpha — enablement session 2",
+      "type": "recording",
+      "modes": [
+        "learn"
+      ],
+      "description": "Second enablement session for the Product Workbench alpha early-access programme.",
+      "purpose": "Getting up to speed before you use it with a client.",
+      "whatYouCanDo": "Watch the recording.",
+      "capabilities": [
+        "product-workbench"
+      ],
+      "readiness": "attend",
+      "timeToValue": "hours",
+      "technicalLevel": "intermediate",
+      "authoritativeSource": "IBM Lighthouse",
+      "url": "https://w3.ibm.com/services/lighthouse/videos/148681",
+      "date": "2026",
+      "duration": null,
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "find_event",
+        "demonstrate"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: IBM Consulting practitioners on active EA client deals — Americas, 25-person max"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [
+        "openai",
+        "google",
+        "anthropic",
+        "arize",
+        "badge",
+        "partner training"
+      ],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        },
+        {
+          "label": "Contact Zach Gilbert",
+          "url": "mailto:zach.gilbert@ibm.com"
+        }
+      ],
+      "owner": null,
+      "contact": {
+        "name": "Zach Gilbert",
+        "email": "zach.gilbert@ibm.com",
+        "role": "Americas AI Adoption Lab Lead"
+      },
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-ai-adoption-lab",
+      "title": "AI Adoption Lab — Americas",
+      "type": "event",
+      "modes": [
+        "learn"
+      ],
+      "description": "1.5-day in-person immersive lab across US cities. Hands-on across Context Studio, Process Studio, Product Workbench and Agentic App Studio; participants leave able to demo end-to-end using real client context. Includes partner training sessions (OpenAI, Google, Anthropic, Arize) and client case studies; earns the IBM Consulting Generative & Agentic AI Consultant Badge.",
+      "purpose": "Becoming able to demo EA end-to-end with real client context, with partner training included.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "context-studio",
+        "process-studio",
+        "product-workbench",
+        "agentic-app-studio",
+        "demo-building",
+        "partner-ecosystem"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "basic",
+      "format": "In-person · Americas series",
+      "duration": "1.5 days",
+      "sessions": [
+        {
+          "date": "28–30 Sep 2026",
+          "location": "New York, NY",
+          "status": "confirmed"
+        },
+        {
+          "date": "19–21 Oct 2026",
+          "location": "Texas (office TBD)",
+          "status": "confirmed"
+        },
+        {
+          "date": "30 Nov – 2 Dec 2026",
+          "location": "New York, NY",
+          "status": "confirmed"
+        }
+      ],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "find_event"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: IBM Consulting practitioners, local market leads, black belts — EMEA"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [
+        "emea",
+        "in-person",
+        "roadshow"
+      ],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-roadshow",
+      "title": "Enterprise Advantage Roadshow (EMEA)",
+      "type": "event",
+      "modes": [
+        "learn"
+      ],
+      "description": "One-day in-person immersive EA experiences across EMEA markets: hands-on platform sessions (Process Studio, Context Studio, App Studio, Product Workbench), live demos and client story presentations.",
+      "purpose": "Structured enablement ahead of client work.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "enterprise-advantage",
+        "process-studio",
+        "context-studio",
+        "agentic-app-studio",
+        "product-workbench"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "basic",
+      "format": "In-person · EMEA series",
+      "duration": "Full day",
+      "sessions": [
+        {
+          "date": "18 Sep 2026",
+          "location": "Munich (HCD × S&T)",
+          "status": "confirmed"
+        },
+        {
+          "date": "5 Oct 2026",
+          "location": "Madrid (HCD × S&T)",
+          "status": "confirmed"
+        },
+        {
+          "date": "19 Oct 2026",
+          "location": "Rome (HCD × S&T)",
+          "status": "confirmed"
+        },
+        {
+          "date": "21 Oct 2026",
+          "location": "Milan (HCD × S&T)",
+          "status": "confirmed"
+        },
+        {
+          "date": "TBC",
+          "location": "France, UKI, NCEE, Stockholm",
+          "status": "coming soon"
+        }
+      ],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "find_event"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: GTM, LCPs, Solution Architects, AI Engineers — all Geos"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-masterclass-sales-tech",
+      "title": "EA Masterclass — Sales & Technical Tracks",
+      "type": "course",
+      "modes": [
+        "learn"
+      ],
+      "description": "2-day immersive masterclass with parallel Sales and Technical tracks: value proposition, hands-on Advantage Core, commercial model, shark tank pitch (Sales) and deep ICA platform, Agentic PDLC and deployment practice (Technical).",
+      "purpose": "Structured enablement ahead of client work.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "enterprise-advantage",
+        "selling-positioning",
+        "agentic-pdlc"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "intermediate",
+      "format": "Classroom",
+      "duration": "2 days",
+      "sessions": [],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "propose",
+        "find_event"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: GTM, LCPs, HCD"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [
+        "pitch",
+        "pricing",
+        "commercial model"
+      ],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-masterclass-sales",
+      "title": "EA Masterclass — Sales Track",
+      "type": "course",
+      "modes": [
+        "learn"
+      ],
+      "description": "2-day sales masterclass: articulate the EA value proposition, work hands-on with the Advantage Core, and deliver a shark tank pitch built around a real client opportunity. Includes commercial model and pricing.",
+      "purpose": "Structured enablement ahead of client work.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "selling-positioning",
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "basic",
+      "format": "Classroom",
+      "duration": "2 days",
+      "sessions": [],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "build_customise",
+        "find_event"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: Data Scientists, AI Engineers, Solution Architects"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-masterclass-tech",
+      "title": "EA Masterclass — Technical Track",
+      "type": "course",
+      "modes": [
+        "learn"
+      ],
+      "description": "2-day technical masterclass across the full ICA platform: Agentic Apps, Context Studio, Agentic PDLC, DeepAgents, Coding Agents, observability, deployment and governance.",
+      "purpose": "Structured enablement ahead of client work.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "agentic-app-studio",
+        "agentic-pdlc",
+        "context-studio",
+        "observability-governance"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "advanced",
+      "format": "Classroom",
+      "duration": "2 days",
+      "sessions": [],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "find_event"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: Data Scientists, AI Engineers, Solution Architects"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [
+        "software delivery",
+        "coding agents"
+      ],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-pdlc-masterclass",
+      "title": "Agentic PDLC Masterclass",
+      "type": "course",
+      "modes": [
+        "learn"
+      ],
+      "description": "Introduces Enterprise Advantage and the evolution toward an agentic PDLC: DeepAgents, Coding Agents, Context Studio, observability, evaluation, security and governance through hands-on labs.",
+      "purpose": "Structured enablement ahead of client work.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "agentic-pdlc",
+        "context-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "advanced",
+      "format": "Classroom",
+      "duration": "2 days",
+      "sessions": [],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "demonstrate",
+        "find_event"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: Data Scientists, AI Engineers, Solution Architects, Delivery Executives"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [
+        "custom demo",
+        "live demos"
+      ],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-sme-enablement",
+      "title": "EA SME Enablement",
+      "type": "course",
+      "modes": [
+        "learn"
+      ],
+      "description": "Virtual session enabling sector APs, architects and technical SMEs to understand the EA technical value proposition — all Advantage Core components with live demos and custom demo building.",
+      "purpose": "Structured enablement ahead of client work.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "enterprise-advantage",
+        "demo-building"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "basic",
+      "format": "Virtual",
+      "duration": "2 hours",
+      "sessions": [],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "find_event"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: Data Scientists, AI Engineers, Solution Architects, Delivery Executives"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-pdlc-sme",
+      "title": "Agentic PDLC SME Enablement",
+      "type": "course",
+      "modes": [
+        "learn"
+      ],
+      "description": "Virtual session for teams on Agentic PDLC opportunities: Context Studio, Agentic PDLC journey and components, live demos, end-to-end architecture, differentiators and engagement model, with hands-on labs.",
+      "purpose": "Structured enablement ahead of client work.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "agentic-pdlc",
+        "context-studio"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "intermediate",
+      "format": "Virtual",
+      "duration": "2–3 hours",
+      "sessions": [],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "propose",
+        "find_event"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: LCPs, HCD GTM, Band 9s, Senior Architects"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [
+        "competitive positioning",
+        "commercial model"
+      ],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-sales-solutioning",
+      "title": "EA Sales & Solutioning Virtual",
+      "type": "course",
+      "modes": [
+        "learn"
+      ],
+      "description": "Virtual enablement for sales, pre-sales and delivery leaders: value proposition, platform overview, competitive positioning, use cases, client stories and commercial model.",
+      "purpose": "Structured enablement ahead of client work.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "selling-positioning",
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "none",
+      "format": "Virtual",
+      "duration": "2 hours",
+      "sessions": [],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "propose",
+        "find_event"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: Lead Client Partners, HCD GTM, senior sellers — all Geos"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [
+        "deal structuring",
+        "lcp"
+      ],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-lcp-masterclass",
+      "title": "EA Masterclass for LCPs",
+      "type": "course",
+      "modes": [
+        "learn"
+      ],
+      "description": "2-day in-person masterclass for Lead Client Partners: full EA value proposition, live platform demos, commercial model and deal structuring, Agentic PDLC and a hands-on App Studio challenge.",
+      "purpose": "Structured enablement ahead of client work.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "selling-positioning",
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "none",
+      "format": "Classroom",
+      "duration": "2 days",
+      "sessions": [],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    },
+    {
+      "industries": [],
+      "clientProblems": [],
+      "intents": [
+        "learn",
+        "find_event"
+      ],
+      "clientMoments": [],
+      "prerequisites": [
+        "Audience: AIIS, IEA evangelist community, technical SMEs — all Geos"
+      ],
+      "caveats": [
+        "Registration is handled through the Activation Hub curriculum (Express Interest)."
+      ],
+      "keywords": [],
+      "actions": [
+        {
+          "label": "Register interest in the Hub",
+          "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/"
+        }
+      ],
+      "owner": null,
+      "contact": null,
+      "status": "live",
+      "lastValidated": null,
+      "id": "course-community-call",
+      "title": "EA Monthly Community Call",
+      "type": "event",
+      "modes": [
+        "learn"
+      ],
+      "description": "Monthly 1-hour alignment forum: ICA release updates, new Agentic App templates, success stories, delivery patterns and best practices.",
+      "purpose": "Structured enablement ahead of client work.",
+      "whatYouCanDo": "Register interest through the Activation Hub curriculum.",
+      "capabilities": [
+        "enterprise-advantage"
+      ],
+      "readiness": "attend",
+      "timeToValue": "weeks",
+      "technicalLevel": "none",
+      "format": "Virtual — monthly",
+      "duration": "1 hour",
+      "sessions": [],
+      "authoritativeSource": "Activation Hub — Curriculum",
+      "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
+      "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    }
+  ]
+}

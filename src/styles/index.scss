@@ -1,0 +1,129 @@
+@use '@carbon/react' with ($css--font-face: false);
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/theme' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+
+body { background: $background; }
+
+.hub-content { padding: 0; background: $background; min-height: calc(100vh - 3rem); }
+.page { padding-block: $spacing-09 $spacing-12; }
+
+.label { @include type-style('label-01'); color: $text-secondary; margin-block-end: $spacing-02; }
+.eyebrow { @include type-style('label-01'); color: $text-secondary; margin-block-end: $spacing-05; }
+.page-title { @include type-style('fluid-display-01', true); margin-block-end: $spacing-05; }
+.page-title--sm { @include type-style('fluid-heading-05', true); }
+.page-lede { @include type-style('body-02'); color: $text-secondary; max-width: 44rem; margin-block-end: $spacing-07; }
+
+// ── Home ─────────────────────────────────────────
+.entry-col { margin-block-end: $spacing-05; }
+.entry-tile { height: 100%; min-height: 15rem; display: flex; flex-direction: column; padding: $spacing-07; }
+.entry-tile--primary { border-block-start: 4px solid $interactive; }
+.entry-tile__kicker { @include type-style('label-02'); color: $text-secondary; margin-block-end: $spacing-03; }
+.entry-tile__title { @include type-style('heading-04'); margin-block-end: $spacing-04; }
+.entry-tile__body { @include type-style('body-01'); color: $text-secondary; flex: 1; }
+.entry-tile__cta { @include type-style('body-compact-01'); color: $link-primary; display: inline-flex; gap: $spacing-03; align-items: center; margin-block-start: $spacing-06; }
+.home-footer { margin-block-start: $spacing-07; @include type-style('body-01'); color: $text-secondary; }
+
+// ── Composer ─────────────────────────────────────
+.composer { background: $layer-01; padding: $spacing-06; border-block-start: 2px solid $interactive; margin-block-end: $spacing-06; }
+.composer .cds--text-area { background: $field-02; }
+.composer__row { display: flex; flex-wrap: wrap; gap: $spacing-05; justify-content: space-between; align-items: flex-end; margin-block-start: $spacing-05; }
+.composer__examples { display: flex; flex-wrap: wrap; gap: $spacing-03; align-items: center; flex: 1 1 30rem; }
+.composer__examples .label { margin: 0 $spacing-02 0 0; }
+.composer__submit { display: flex; gap: $spacing-03; }
+.example-chip {
+  @include type-style('body-compact-01');
+  border: 1px solid $border-subtle-01; background: $layer-02; color: $text-primary; padding: $spacing-02 $spacing-04;
+  cursor: pointer; text-align: start;
+  &:hover { background: $layer-hover-02; }
+  &:focus { outline: 2px solid $focus; outline-offset: -2px; }
+}
+
+// ── Progress ─────────────────────────────────────
+.progress { list-style: none; margin-block: $spacing-05 $spacing-06; }
+.progress__row { display: flex; align-items: center; gap: $spacing-03; min-height: 2rem; @include type-style('body-compact-01'); }
+.progress__row--pending, .progress__row--skipped { color: $text-secondary; }
+.icon-success { fill: $support-success; }
+.icon-error { fill: $support-error; }
+.icon-warning { fill: $support-warning; }
+.icon-muted { fill: $icon-secondary; }
+
+// ── Need bar & understood ────────────────────────
+.need-bar { display: flex; justify-content: space-between; align-items: center; gap: $spacing-05; background: $layer-01; padding: $spacing-05 $spacing-06; margin-block-end: $spacing-05; border-inline-start: 3px solid $interactive; }
+.need-bar__text { @include type-style('body-02'); }
+.understood { margin-block-end: $spacing-07; }
+.understood__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: $spacing-03; }
+.understood__item { background: $layer-01; padding: $spacing-04; }
+.understood__item dt { @include type-style('label-01'); color: $text-secondary; margin-block-end: $spacing-02; }
+.understood__item dd { @include type-style('body-compact-01'); }
+.understood__item .cds--tag { margin: 0 $spacing-02 $spacing-02 0; }
+
+// ── Recommendations ──────────────────────────────
+.path { margin-block: $spacing-05 $spacing-07; }
+.path__headline { @include type-style('fluid-heading-04', true); margin-block-end: $spacing-04; }
+.path__summary { @include type-style('body-02'); max-width: 48rem; }
+.path__note { @include type-style('body-compact-01'); color: $text-secondary; margin-block-start: $spacing-03; padding-inline-start: $spacing-04; border-inline-start: 2px solid $support-warning; }
+.rec-section { margin-block-end: $spacing-08; }
+.rec-section__head { display: flex; align-items: baseline; gap: $spacing-04; border-block-end: 1px solid $border-subtle-01; padding-block-end: $spacing-03; margin-block-end: $spacing-05; }
+.rec-section__head h3 { @include type-style('heading-03'); }
+.rec-section__head span { @include type-style('body-compact-01'); color: $text-secondary; }
+.rec-section__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: $spacing-05; }
+.rec-card { display: flex; flex-direction: column; gap: $spacing-05; padding: $spacing-06; }
+.rec-card--lead { border-block-start: 3px solid $interactive; }
+.rec-card__title { @include type-style('heading-03'); }
+.rec-card__why { background: $layer-02; padding: $spacing-04; border-inline-start: 2px solid $interactive; }
+.rec-card__why p:last-child { @include type-style('body-01'); }
+.rec-card__facts { display: grid; grid-template-columns: 1fr 1fr; gap: $spacing-04 $spacing-05; }
+.rec-card__facts div:nth-child(-n+2) { grid-column: 1 / -1; }
+.rec-card__facts dt { @include type-style('label-01'); color: $text-secondary; }
+.rec-card__facts dd { @include type-style('body-compact-01'); }
+.rec-card__block .cds--list--unordered { margin-inline-start: $spacing-05; }
+.rec-card__block .cds--list__item { @include type-style('body-compact-01'); }
+.rec-card__caveats p { display: flex; gap: $spacing-03; @include type-style('helper-text-01'); color: $text-secondary; margin-block-end: $spacing-02; }
+.rec-card__caveats svg { flex: none; fill: $support-warning; margin-block-start: 1px; }
+.rec-card__contact { @include type-style('helper-text-01'); color: $text-secondary; }
+.resource-tags { display: flex; flex-wrap: wrap; gap: $spacing-02; }
+.resource-tags .cds--tag { margin: 0; }
+.resource-actions { margin-block-start: auto; }
+.resource-actions__buttons { display: flex; flex-wrap: wrap; gap: $spacing-03; }
+.resource-actions__source { @include type-style('helper-text-01'); color: $text-secondary; margin-block-start: $spacing-03; }
+.after-results { display: flex; gap: $spacing-03; flex-wrap: wrap; }
+
+.clarify { margin-block-end: $spacing-06; border-inline-start: 3px solid $support-info; }
+.clarify__form { display: flex; gap: $spacing-03; align-items: flex-end; }
+.clarify__note { @include type-style('helper-text-01'); color: $text-secondary; margin-block-start: $spacing-03; }
+.error-actions { display: flex; flex-wrap: wrap; gap: $spacing-03; margin-block: $spacing-05; }
+
+.empty-state { padding: $spacing-07; }
+.empty-state h2 { @include type-style('heading-03'); margin-block-end: $spacing-04; }
+.empty-state p { @include type-style('body-01'); margin-block-end: $spacing-04; }
+.empty-state__list { list-style: disc; margin: 0 0 $spacing-05 $spacing-06; @include type-style('body-01'); }
+.empty-state__actions { display: flex; flex-wrap: wrap; gap: $spacing-03; align-items: center; }
+
+// ── Browse ───────────────────────────────────────
+.browse-controls { margin-block-end: $spacing-05; }
+.browse-filters { display: grid; grid-template-columns: minmax(18rem, 1.4fr) repeat(3, minmax(10rem, 1fr)); gap: $spacing-05; align-items: end; margin-block-start: $spacing-05;
+  @include breakpoint-down(lg) { grid-template-columns: 1fr 1fr; }
+  @include breakpoint-down(md) { grid-template-columns: 1fr; }
+}
+.browse-count { @include type-style('label-02'); color: $text-secondary; margin-block-end: $spacing-05; }
+.browse-col { margin-block-end: $spacing-05; }
+.browse-tile { height: 100%; display: flex; flex-direction: column; gap: $spacing-04; }
+.browse-tile__title { @include type-style('heading-02'); }
+.browse-tile__desc { @include type-style('body-01'); color: $text-secondary; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.browse-tile__meta { @include type-style('body-compact-01'); }
+.browse-tile__meta .label { display: block; }
+.browse-tile__actions { margin-block-start: auto; }
+
+// ── Debug ────────────────────────────────────────
+.debug { margin-block-start: $spacing-09; padding: $spacing-05; border: 1px dashed $border-strong-01; background: $layer-01; }
+.debug__title { @include type-style('heading-02'); margin-block-end: $spacing-04; }
+.debug__note { @include type-style('helper-text-01'); color: $text-secondary; margin-block: $spacing-03; }
+.debug__table { width: 100%; border-collapse: collapse; @include type-style('body-compact-01');
+  th, td { text-align: start; vertical-align: top; padding: $spacing-03; border-block-end: 1px solid $border-subtle-01; }
+  code { @include type-style('code-01'); }
+}
+.debug .cds--snippet--multi { max-width: 100%; }
+.understood .cds--tag { max-inline-size: 100%; block-size: auto; }
+.understood .cds--tag__label { white-space: normal; overflow: visible; }
