@@ -119,6 +119,25 @@ Nothing in the UI is hard-coded to a query. Different requests produce different
 
 ---
 
+## Deploying
+
+| Where | What runs | AI |
+|---|---|---|
+| **Render** (`render.yaml`) | Full app: UI plus Node API, from one URL | Yes. The key is stored as a Render secret. |
+| **GitHub Pages** (`.github/workflows/pages.yml`) | Static preview: Browse, plus the Deal Accelerator in keyword mode | No. A static site can't keep a key secret. |
+
+**Render setup (one-off):**
+
+1. Go to dashboard.render.com and choose **New → Blueprint**. Connect GitHub and pick this repo.
+2. When prompted, paste your Anthropic key into `ANTHROPIC_API_KEY`, then choose **Apply**.
+3. Render builds with `npm ci --include=dev && npm run build` and starts with `npm start`. It then redeploys on every push to `main`.
+
+The blueprint uses the free plan, which sleeps after about 15 minutes idle and takes about a minute to wake. Before a live demo, open the URL a few minutes early, or switch the service to **Starter** in the Render dashboard.
+
+The Render URL has **no access protection**. Anyone with the link can run AI requests on your key, so keep the link to the people you demo to, and set a monthly spend limit in the Anthropic Console.
+
+---
+
 ## Updating content (no code changes)
 
 Everything a user sees comes from **`content/catalogue.json`**:

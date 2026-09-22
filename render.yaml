@@ -1,0 +1,20 @@
+# Render blueprint: runs the full app (UI + AI API) as one Node web service.
+# In Render: New → Blueprint → pick this repo. Render will ask for ANTHROPIC_API_KEY.
+services:
+  - type: web
+    name: activationhub-dealaccelerator
+    runtime: node
+    plan: free            # free tier sleeps after ~15 min idle; upgrade to Starter in the dashboard for demos
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: ANTHROPIC_API_KEY
+        sync: false       # entered in the Render dashboard, never committed
+      - key: AI_MODEL
+        value: claude-opus-5
+      - key: AI_EFFORT
+        value: low
