@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { useSearchParams, Link as RouterLink } from "react-router-dom";
 import { Grid, Column, Button, InlineNotification, ActionableNotification, Tile, TextInput, Link } from "@carbon/react";
-import { Edit, Renew, ArrowRight, Launch } from "@carbon/icons-react";
+import { Edit, Renew, ArrowRight, Launch, Password } from "@carbon/icons-react";
 import { streamRecommendation, fetchHealth } from "../api/client.js";
+import { clearBrowserKey, isKeyRemembered } from "../api/browserKey.js";
+import { ApiKeyModal } from "../components/ApiKeyModal.jsx";
 import { useCatalogue } from "../api/useCatalogue.js";
 import { IntentComposer } from "../components/IntentComposer.jsx";
 import { AnalysisProgress } from "../components/AnalysisProgress.jsx";
@@ -13,7 +15,7 @@ import { DebugPanel } from "../components/DebugPanel.jsx";
 const SECTION_NOTES = { show: "Ready or nearly ready for a client conversation", learn: "Understand it before you promise it", build: "Customise or create something for this client" };
 const ERROR_TITLES = {
   ai_not_configured: "AI analysis isn't configured",
-  ai_auth: "The AI service rejected the server's credentials",
+  ai_auth: "The AI service rejected the API key",
   ai_rate_limited: "The AI service is busy",
   ai_unreachable: "Couldn't reach the AI service",
   ai_malformed: "The AI returned something unexpected",
@@ -37,9 +39,11 @@ export function DealAccelerator() {
   const [error, setError] = useState(null);
   const [events, setEvents] = useState([]);
   const [answer, setAnswer] = useState("");
+  const [keyModalOpen, setKeyModalOpen] = useState(false);
   const controller = useRef(null);
 
-  useEffect(() => { fetchHealth().then(setHealth).catch(() => setHealth({ ai: { configured: false }, unreachable: true })); }, []);
+  const refreshHealth = () => fetchHealth().then(setHealth).catch(() => setHealth({ ai: { configured: false }, unreachable: true }));
+  useEffect(() => { refreshHealth(); }, []);
   useEffect(() => () => controller.current?.abort(), []);
 
   async function start(query, mode = "ai") {
@@ -90,11 +94,29 @@ export function DealAccelerator() {
         {phase === "idle" && <h1 className="page-title">What are you trying to accomplish?</h1>}
       </Column>
 
-      {aiUnavailable && phase === "idle" && (
+      {health?.static && (phase === "idle" || editing) && (
+        <Column sm={4} md={8} lg={12}>
+          {health.ai.configured ? (
+            <InlineNotification kind="info" lowContrast hideCloseButton
+              title="AI is on — using your API key on this device."
+              subtitle={isKeyRemembered() ? "The key is remembered in this browser until you remove it." : "The key will be forgotten when you close this tab."} />
+          ) : (
+            <InlineNotification kind="warning" lowContrast hideCloseButton
+              title="AI analysis is off on this static site."
+              subtitle="GitHub Pages has no server to hold an API key. Add your own Anthropic key to use AI in this browser — otherwise requests are matched by keywords." />
+          )}
+          <div className="key-actions">
+            <Button kind={health.ai.configured ? "ghost" : "primary"} size="sm" renderIcon={Password} onClick={() => setKeyModalOpen(true)}>{health.ai.configured ? "Change API key" : "Add API key"}</Button>
+            {health.ai.configured && <Button kind="ghost" size="sm" onClick={() => { clearBrowserKey(); refreshHealth(); }}>Remove key</Button>}
+          </div>
+        </Column>
+      )}
+
+      {aiUnavailable && !health.static && phase === "idle" && (
         <Column sm={4} md={8} lg={12}>
           <InlineNotification kind="warning" lowContrast hideCloseButton
-            title={health.static ? "Static preview — AI analysis is off." : health.unreachable ? "The Activation Hub server isn't reachable." : "AI analysis isn't configured on this server."}
-            subtitle={health.static ? "This GitHub Pages copy has no server, so it can't call the AI. Requests are matched by keywords against the same catalogue. Run the app locally for the full AI experience." : health.unreachable ? "Start the API server and reload." : "Set ANTHROPIC_API_KEY on the server to enable it. Until then you can run an explicitly labelled keyword match."} />
+            title={health.unreachable ? "The Activation Hub server isn't reachable." : "AI analysis isn't configured on this server."}
+            subtitle={health.unreachable ? "Start the API server and reload." : "Set ANTHROPIC_API_KEY on the server to enable it. Until then you can run an explicitly labelled keyword match."} />
         </Column>
       )}
 
@@ -141,6 +163,7 @@ export function DealAccelerator() {
             onActionButtonClick={() => start(run.query, run.mode)} />
           <div className="error-actions">
             <Button kind="tertiary" size="md" renderIcon={Edit} onClick={() => setEditing(true)}>Edit request</Button>
+            {health?.static && ["ai_auth", "ai_not_configured"].includes(error.code) && <Button kind="tertiary" size="md" renderIcon={Password} onClick={() => setKeyModalOpen(true)}>Update API key</Button>}
             {run?.mode === "ai" && <Button kind="ghost" size="md" onClick={() => start(run.query, "keywords")}>Use keyword matching instead (no AI)</Button>}
             <Button kind="ghost" size="md" as={RouterLink} to="/browse">Browse all resources</Button>
           </div>
@@ -221,6 +244,10 @@ export function DealAccelerator() {
 
       {debug && (result || events.length > 0) && (
         <Column sm={4} md={8} lg={16}><DebugPanel result={result} events={events} /></Column>
+      )}
+      {health?.static && (
+        <ApiKeyModal open={keyModalOpen} onClose={() => setKeyModalOpen(false)}
+          onSaved={() => { setKeyModalOpen(false); refreshHealth(); }} />
       )}
     </Grid>
   );

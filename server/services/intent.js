@@ -1,7 +1,6 @@
 // Intent analysis: turns a natural-language request into structured context,
 // constrained to the catalogue's own taxonomy so it can be matched deterministically.
 import { z } from "zod";
-import { structuredCall } from "../ai/anthropic.js";
 import { interpretWithoutAI } from "./vocabulary.js";
 
 export { interpretWithoutAI };
@@ -57,9 +56,10 @@ ${list(taxonomy.industries)}
 Asset needs: ${taxonomy.assetNeeds.join(", ")}`;
 }
 
-export async function interpretIntent(query, taxonomy, { today = new Date().toISOString().slice(0, 10) } = {}) {
+/** `call` is a structured-call function (server: env key; browser: the user's own key). */
+export async function interpretIntent(query, taxonomy, { call, today = new Date().toISOString().slice(0, 10) }) {
   const schema = buildIntentSchema(taxonomy);
-  const { data, usage, ms } = await structuredCall({
+  const { data, usage, ms } = await call({
     system: systemPrompt(taxonomy, today),
     user: `Request: """${query}"""`,
     schema,

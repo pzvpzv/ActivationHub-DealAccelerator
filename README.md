@@ -124,7 +124,7 @@ Nothing in the UI is hard-coded to a query. Different requests produce different
 | Where | What runs | AI |
 |---|---|---|
 | **Render** (`render.yaml`) | Full app: UI plus Node API, from one URL | Yes. The key is stored as a Render secret. |
-| **GitHub Pages** (`.github/workflows/pages.yml`) | Static preview: Browse, plus the Deal Accelerator in keyword mode | No. A static site can't keep a key secret. |
+| **GitHub Pages** (`.github/workflows/pages.yml`) | Static site: Browse, plus the Deal Accelerator with the same pipeline running in the browser | Yes, **with your own key**. Choose **Add API key** on the Deal Accelerator page. The key stays in that browser (tab session by default, or "remember on this device") and is sent only to api.anthropic.com. It is never in the repo or the build. Without a key, requests use labelled keyword matching. |
 
 **Render setup (one-off):**
 

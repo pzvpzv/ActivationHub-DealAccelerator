@@ -1,6 +1,7 @@
 // Browser API client. Talks only to this app's server — no AI credentials in the browser.
 // In the static build (VITE_STATIC=1, e.g. GitHub Pages) there is no server: the catalogue is a
-// static file and the pipeline runs in the browser in keyword mode only.
+// static file and the pipeline runs in the browser — with AI only if the user adds their own key.
+import { getBrowserKey } from "./browserKey.js";
 
 export const STATIC_MODE = import.meta.env.VITE_STATIC === "1";
 
@@ -11,7 +12,7 @@ export async function fetchCatalogue() {
 }
 
 export async function fetchHealth() {
-  if (STATIC_MODE) return { ai: { configured: false }, static: true };
+  if (STATIC_MODE) return { ai: { configured: Boolean(getBrowserKey()), ownKey: true }, static: true };
   const res = await fetch("/api/health");
   if (!res.ok) throw new Error(`Health request failed (${res.status})`);
   return res.json();
@@ -30,10 +31,20 @@ export class RecommendError extends Error {
  * Resolves with the final result; rejects with RecommendError.
  */
 async function runInBrowser({ query, mode, onEvent }) {
-  if (mode !== "keywords") throw new RecommendError({ code: "ai_not_configured", message: "AI analysis needs the Activation Hub server; this static site can only run keyword matching.", retryable: false });
-  const [{ runPipeline }, raw] = await Promise.all([import("../../server/services/pipeline.js"), fetchCatalogue()]);
+  const key = getBrowserKey();
+  if (mode === "ai" && !key) throw new RecommendError({ code: "ai_not_configured", message: "Add your Anthropic API key to use AI on this static site.", retryable: false });
+  const [{ runPipeline }, raw, ai] = await Promise.all([
+    import("../../server/services/pipeline.js"),
+    fetchCatalogue(),
+    mode === "ai" ? import("./browserAI.js").then((m) => m.createBrowserAI(key)) : null,
+  ]);
   const catalogue = { ...raw, issues: [], byId: new Map(raw.resources.map((r) => [r.id, r])) };
-  return runPipeline({ query, mode, catalogue }, (event) => onEvent?.(event));
+  try {
+    return await runPipeline({ query, mode, catalogue, ai }, (event) => onEvent?.(event));
+  } catch (error) {
+    if (ai?.isAIError(error)) throw new RecommendError({ code: error.code, message: error.message, retryable: error.retryable });
+    throw error;
+  }
 }
 
 export async function streamRecommendation({ query, mode = "ai", signal, onEvent }) {

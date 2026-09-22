@@ -127,3 +127,9 @@ body { background: $background; }
 .debug .cds--snippet--multi { max-width: 100%; }
 .understood .cds--tag { max-inline-size: 100%; block-size: auto; }
 .understood .cds--tag__label { white-space: normal; overflow: visible; }
+
+// ── API key (static build) ───────────────────────
+.key-actions { display: flex; gap: $spacing-03; margin-block: $spacing-03 $spacing-05; }
+.key-modal { display: flex; flex-direction: column; gap: $spacing-05; @include type-style('body-01'); }
+.key-modal__facts { list-style: disc; margin-inline-start: $spacing-06; display: flex; flex-direction: column; gap: $spacing-02; }
+.key-modal__note { @include type-style('helper-text-01'); color: $text-secondary; }

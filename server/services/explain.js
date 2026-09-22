@@ -1,7 +1,6 @@
 // Reranks the deterministic candidates and writes grounded rationale.
 // The AI can only choose from candidate ids (enforced by the output schema and re-checked here).
 import { z } from "zod";
-import { structuredCall } from "../ai/anthropic.js";
 
 import { MAX_RECOMMENDATIONS } from "./explain-metadata.js";
 
@@ -48,9 +47,9 @@ function candidatePayload(candidates, byId) {
   });
 }
 
-export async function explainWithAI({ query, intent, candidates, coverage, catalogue }) {
+export async function explainWithAI({ query, intent, candidates, coverage, catalogue, call }) {
   const ids = candidates.map((c) => c.id);
-  const { data, usage, ms } = await structuredCall({
+  const { data, usage, ms } = await call({
     system: SYSTEM,
     user: JSON.stringify({ request: query, interpretedIntent: intent, coverageNotes: coverage.notes, matchQuality: coverage.quality, shortlist: candidatePayload(candidates, catalogue.byId) }, null, 1),
     schema: schemaFor(ids),
