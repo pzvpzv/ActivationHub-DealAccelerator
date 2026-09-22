@@ -2,7 +2,9 @@
 // constrained to the catalogue's own taxonomy so it can be matched deterministically.
 import { z } from "zod";
 import { structuredCall } from "../ai/anthropic.js";
-import { matchVocabulary } from "./vocabulary.js";
+import { interpretWithoutAI } from "./vocabulary.js";
+
+export { interpretWithoutAI };
 
 const enumOf = (list) => z.enum(list.map((x) => (typeof x === "string" ? x : x.id)));
 
@@ -66,17 +68,3 @@ export async function interpretIntent(query, taxonomy, { today = new Date().toIS
   return { intent: data, source: "ai", usage, ms };
 }
 
-/** Keyword-only interpretation, used only when the user explicitly chooses it. */
-export function interpretWithoutAI(query, taxonomy) {
-  const v = matchVocabulary(query, taxonomy);
-  const capabilityLabel = taxonomy.capabilities.find((c) => c.id === v.capabilities[0])?.label ?? null;
-  return {
-    intent: {
-      goal: v.goal, goalSummary: query, client: null, industry: v.industry, industryMentioned: null,
-      businessProblem: null, capability: capabilityLabel, capabilities: v.capabilities, assetNeed: v.assetNeed,
-      urgency: null, timeHorizon: v.timeHorizon, preference: v.preference, constraints: [], searchConcepts: v.searchConcepts,
-      clarifyingQuestion: null,
-    },
-    source: "keywords",
-  };
-}

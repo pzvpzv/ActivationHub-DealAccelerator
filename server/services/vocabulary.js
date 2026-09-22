@@ -37,3 +37,18 @@ export function matchVocabulary(query, taxonomy) {
 
   return { goal, industry, capabilities, assetNeed, timeHorizon, preference, searchConcepts };
 }
+
+/** Keyword-only interpretation, used only when the user explicitly chooses it. */
+export function interpretWithoutAI(query, taxonomy) {
+  const v = matchVocabulary(query, taxonomy);
+  const capabilityLabel = taxonomy.capabilities.find((c) => c.id === v.capabilities[0])?.label ?? null;
+  return {
+    intent: {
+      goal: v.goal, goalSummary: query, client: null, industry: v.industry, industryMentioned: null,
+      businessProblem: null, capability: capabilityLabel, capabilities: v.capabilities, assetNeed: v.assetNeed,
+      urgency: null, timeHorizon: v.timeHorizon, preference: v.preference, constraints: [], searchConcepts: v.searchConcepts,
+      clarifyingQuestion: null,
+    },
+    source: "keywords",
+  };
+}

@@ -93,8 +93,8 @@ export function DealAccelerator() {
       {aiUnavailable && phase === "idle" && (
         <Column sm={4} md={8} lg={12}>
           <InlineNotification kind="warning" lowContrast hideCloseButton
-            title={health.unreachable ? "The Activation Hub server isn't reachable." : "AI analysis isn't configured on this server."}
-            subtitle={health.unreachable ? "Start the API server and reload." : "Set ANTHROPIC_API_KEY on the server to enable it. Until then you can run an explicitly labelled keyword match."} />
+            title={health.static ? "Static preview — AI analysis is off." : health.unreachable ? "The Activation Hub server isn't reachable." : "AI analysis isn't configured on this server."}
+            subtitle={health.static ? "This GitHub Pages copy has no server, so it can't call the AI. Requests are matched by keywords against the same catalogue. Run the app locally for the full AI experience." : health.unreachable ? "Start the API server and reload." : "Set ANTHROPIC_API_KEY on the server to enable it. Until then you can run an explicitly labelled keyword match."} />
         </Column>
       )}
 
