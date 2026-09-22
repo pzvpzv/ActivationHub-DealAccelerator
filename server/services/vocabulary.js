@@ -32,7 +32,7 @@ export function matchVocabulary(query, taxonomy) {
 
   const assetNeed = taxonomy.assetNeeds.filter((a) => containsTerm(text, a) || containsTerm(text, `${a}s`));
 
-  const stop = new Set("i need want a an the to for of my our with and or some something about can me show help get find what is are this that on in it client clients who have has be do does".split(" "));
+  const stop = new Set("i need want a an the to for of my our with and or some something about can me show help get find what is are this that on in it client clients who have has be do does today tomorrow tonight morning afternoon week weeks month next this ready meeting monday tuesday wednesday thursday friday asap urgent".split(" "));
   const searchConcepts = query.toLowerCase().replace(/[^a-z0-9&\s-]/g, " ").split(/\s+/).filter((w) => w.length > 2 && !stop.has(w));
 
   return { goal, industry, capabilities, assetNeed, timeHorizon, preference, searchConcepts };
