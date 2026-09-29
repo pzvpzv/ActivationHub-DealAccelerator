@@ -6,6 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { z } from "zod";
+import { sectionFor } from "./sections.js";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 export const CATALOGUE_PATH = process.env.CATALOGUE_PATH || path.resolve(here, "../../content/catalogue.json");
@@ -41,10 +42,7 @@ export const ResourceSchema = z.object({
   provenance: z.string().min(1),
 }).passthrough();
 
-/** A resource sits in the section its type belongs to, unless it names its own. */
-export function sectionFor(resource, taxonomy) {
-  return resource.section || taxonomy.types.find((t) => t.id === resource.type)?.section || null;
-}
+export { sectionFor };
 
 function crossCheck(resource, taxonomy) {
   const problems = [];
