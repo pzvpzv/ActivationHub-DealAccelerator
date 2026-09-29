@@ -20,7 +20,7 @@ for TAG in $TAGS; do
   mkdir -p "dist/v/$TAG"
   cp -r "$WORK/dist/." "dist/v/$TAG/"
   cp "$WORK/content/catalogue.json" "dist/v/$TAG/catalogue.json"
-  cp "dist/v/$TAG/index.html" "dist/v/$TAG/404.html"
+  # deep links fall back to the repository-root 404, which routes back into this version
   DATE=$(git log -1 --format=%ad --date=format:'%d %b %Y' "$TAG")
   SUBJECT=$(git tag -l --format='%(contents:subject)' "$TAG")
   [ -z "$SUBJECT" ] && SUBJECT=$(git log -1 --format=%s "$TAG")
