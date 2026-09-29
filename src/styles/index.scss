@@ -142,3 +142,10 @@ body { background: $background; }
 .browse-meta { display: flex; align-items: center; gap: $spacing-05; margin-block-end: $spacing-05; }
 .browse-meta .browse-count { margin: 0; }
 .browse-tile__section { margin: 0; }
+
+// ── Footer ───────────────────────────────────────
+.hub-footer { border-block-start: 1px solid $border-subtle-01; padding: $spacing-05 0 $spacing-07; margin-block-start: $spacing-09;
+  @include type-style('helper-text-01'); color: $text-secondary;
+  p { max-width: 60rem; margin-inline: auto; padding-inline: $spacing-05; }
+}
+.hub-footer__version { color: $text-primary; }

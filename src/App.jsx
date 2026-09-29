@@ -3,6 +3,7 @@ import { Theme, Header, HeaderContainer, HeaderName, HeaderNavigation, HeaderMen
 import { Home } from "./pages/Home.jsx";
 import { Browse } from "./pages/Browse.jsx";
 import { DealAccelerator } from "./pages/DealAccelerator.jsx";
+import { VersionFooter } from "./components/VersionFooter.jsx";
 
 const nav = (pathname) => [
   <HeaderMenuItem key="accelerator" as={Link} to="/accelerator" isActive={pathname.startsWith("/accelerator")}>Deal Accelerator</HeaderMenuItem>,
@@ -33,6 +34,7 @@ export function App() {
           <Route path="/accelerator" element={<DealAccelerator />} />
           <Route path="*" element={<Home />} />
         </Routes>
+        <VersionFooter />
       </Content>
     </>
   );

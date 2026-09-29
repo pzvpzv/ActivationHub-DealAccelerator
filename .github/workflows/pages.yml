@@ -28,15 +28,20 @@ jobs:
       - run: npm ci
       - run: npm run validate:content
       - run: npm test
-      - name: Build static site
+      - name: Build the current version (served at the root)
         run: npm run build
         env:
           VITE_STATIC: "1"
           VITE_BASE: /${{ github.event.repository.name }}/
+          VITE_VERSION: latest
       - name: Add catalogue and SPA fallback
         run: |
           cp content/catalogue.json dist/catalogue.json
           cp dist/index.html dist/404.html
+      # Every tagged iteration stays live at /v/<tag>/, so versions can be compared
+      # side by side rather than described. Each is built from its own commit.
+      - name: Build each tagged iteration
+        run: bash scripts/build-versions.sh "${{ github.event.repository.name }}"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
