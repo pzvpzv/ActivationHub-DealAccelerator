@@ -312,66 +312,110 @@
         ]
       }
     ],
-    "types": [
+    "sections": [
       {
-        "id": "accelerator",
-        "label": "Accelerator",
-        "mode": "build"
+        "id": "enablement",
+        "label": "Enablement & guides",
+        "blurb": "Recordings, walkthroughs, guided labs and user guides — how the platform works and how to use it."
       },
       {
-        "id": "template",
-        "label": "Demo template",
-        "mode": "build"
+        "id": "demos",
+        "label": "Demos & assets",
+        "blurb": "Runnable app templates and client-ready walkthrough decks you can show or convert."
       },
       {
-        "id": "walkthrough-deck",
-        "label": "Walkthrough deck",
-        "mode": "show"
+        "id": "tools",
+        "label": "Tools & accelerators",
+        "blurb": "Demo Factory, Proposal Generator and the Advantage platforms — where you actually build."
       },
       {
-        "id": "recording",
-        "label": "Recording",
-        "mode": "learn"
+        "id": "training",
+        "label": "Training & events",
+        "blurb": "Masterclasses, SME sessions, labs and roadshows — what to attend and when."
       },
       {
-        "id": "guide",
-        "label": "Guide",
-        "mode": "learn"
-      },
-      {
-        "id": "lab",
-        "label": "Lab",
-        "mode": "learn"
-      },
-      {
-        "id": "course",
-        "label": "Course",
-        "mode": "learn"
-      },
-      {
-        "id": "event",
-        "label": "Event",
-        "mode": "learn"
-      },
-      {
-        "id": "campaign",
-        "label": "Campaign",
-        "mode": "show"
-      },
-      {
-        "id": "collateral",
-        "label": "Collateral",
-        "mode": "show"
-      },
-      {
-        "id": "platform",
-        "label": "Platform / tool",
-        "mode": "build"
+        "id": "campaigns",
+        "label": "Campaigns & collateral",
+        "blurb": "Approved go-to-market messaging, decks and one-pagers for client conversations."
       },
       {
         "id": "community",
         "label": "Community & support",
-        "mode": "learn"
+        "blurb": "Where to ask a question and who to contact."
+      }
+    ],
+    "types": [
+      {
+        "id": "accelerator",
+        "label": "Accelerator",
+        "mode": "build",
+        "section": "tools"
+      },
+      {
+        "id": "template",
+        "label": "Demo template",
+        "mode": "build",
+        "section": "demos"
+      },
+      {
+        "id": "walkthrough-deck",
+        "label": "Walkthrough deck",
+        "mode": "show",
+        "section": "demos"
+      },
+      {
+        "id": "recording",
+        "label": "Recording",
+        "mode": "learn",
+        "section": "enablement"
+      },
+      {
+        "id": "guide",
+        "label": "Guide",
+        "mode": "learn",
+        "section": "enablement"
+      },
+      {
+        "id": "lab",
+        "label": "Lab",
+        "mode": "learn",
+        "section": "enablement"
+      },
+      {
+        "id": "course",
+        "label": "Course",
+        "mode": "learn",
+        "section": "training"
+      },
+      {
+        "id": "event",
+        "label": "Event",
+        "mode": "learn",
+        "section": "training"
+      },
+      {
+        "id": "campaign",
+        "label": "Campaign",
+        "mode": "show",
+        "section": "campaigns"
+      },
+      {
+        "id": "collateral",
+        "label": "Collateral",
+        "mode": "show",
+        "section": "campaigns"
+      },
+      {
+        "id": "platform",
+        "label": "Platform / tool",
+        "mode": "build",
+        "section": "tools"
+      },
+      {
+        "id": "community",
+        "label": "Community & support",
+        "mode": "learn",
+        "section": "community"
       }
     ],
     "readiness": [

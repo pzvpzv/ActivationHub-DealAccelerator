@@ -41,6 +41,11 @@ export const ResourceSchema = z.object({
   provenance: z.string().min(1),
 }).passthrough();
 
+/** A resource sits in the section its type belongs to, unless it names its own. */
+export function sectionFor(resource, taxonomy) {
+  return resource.section || taxonomy.types.find((t) => t.id === resource.type)?.section || null;
+}
+
 function crossCheck(resource, taxonomy) {
   const problems = [];
   const ids = (list) => new Set(list.map((x) => x.id));
@@ -54,6 +59,8 @@ function crossCheck(resource, taxonomy) {
   for (const [field, values, allowed] of checks) {
     for (const v of values) if (!allowed.has(v)) problems.push(`${field}: "${v}" is not defined in taxonomy`);
   }
+  if (resource.section && !ids(taxonomy.sections).has(resource.section)) problems.push(`section: "${resource.section}" is not defined in taxonomy`);
+  if (!sectionFor(resource, taxonomy)) problems.push(`section: type "${resource.type}" has no section in taxonomy`);
   return problems;
 }
 
@@ -73,7 +80,7 @@ export function validateCatalogue(raw) {
     if (seen.has(parsed.data.id)) problems.push("duplicate id");
     if (problems.length) { issues.push({ id: label, problems }); continue; }
     seen.add(parsed.data.id);
-    resources.push(parsed.data);
+    resources.push({ ...parsed.data, section: sectionFor(parsed.data, taxonomy) });
   }
   return { taxonomy, resources, issues, hubUrl: raw.hubUrl, generatedFrom: raw.generatedFrom };
 }

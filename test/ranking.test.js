@@ -101,3 +101,23 @@ test("purpose without topic: 'ready to show tomorrow' returns ready-to-use start
   const custom = rank("I want something I can customise for my client.", { preference: "customisable" });
   assert.equal(catalogue.byId.get(custom.ranked.candidates[0].id).readiness, "customise");
 });
+
+test("every resource resolves into exactly one hub section", () => {
+  const sections = new Set(catalogue.taxonomy.sections.map((s) => s.id));
+  assert.ok(sections.size >= 5);
+  for (const r of catalogue.resources) {
+    assert.ok(sections.has(r.section), `${r.id} has section "${r.section}"`);
+  }
+  // Every section is reachable, so the landing page can't show an empty card.
+  for (const s of sections) {
+    assert.ok(catalogue.resources.some((r) => r.section === s), `section ${s} has at least one resource`);
+  }
+});
+
+test("a resource can override the section its type implies", () => {
+  const moved = { ...raw.resources.find((r) => r.id === "rec-pitching-ea"), id: "moved-item", section: "campaigns" };
+  const extended = validateCatalogue({ ...raw, resources: [...raw.resources, moved] });
+  assert.equal(extended.resources.find((r) => r.id === "moved-item").section, "campaigns");
+  const bad = validateCatalogue({ ...raw, resources: [{ ...moved, id: "bad-section", section: "nope" }] });
+  assert.match(bad.issues[0].problems.join(" "), /section: "nope"/);
+});
