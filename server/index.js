@@ -17,8 +17,8 @@ app.get("/api/health", (_req, res) => {
 });
 
 app.get("/api/catalogue", (_req, res) => {
-  const { taxonomy, resources, hubUrl, generatedFrom } = getCatalogue();
-  res.json({ taxonomy, resources, hubUrl, generatedFrom });
+  const { taxonomy, resources, announcements, hubUrl, generatedFrom } = getCatalogue();
+  res.json({ taxonomy, resources, announcements, hubUrl, generatedFrom });
 });
 
 // Streams newline-delimited JSON: stage updates as each real step completes, then the result.

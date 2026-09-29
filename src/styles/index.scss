@@ -149,3 +149,40 @@ body { background: $background; }
   p { max-width: 60rem; margin-inline: auto; padding-inline: $spacing-05; }
 }
 .hub-footer__version { color: $text-primary; }
+
+// ── Shell with the left rail ─────────────────────
+.hub-content { padding-inline-start: 0; }
+@include breakpoint(lg) { .hub-content { margin-inline-start: 16rem; } }
+.cds--side-nav__navigation .rail-tag { margin-inline-start: $spacing-03; }
+
+// ── Home: noticeboard ────────────────────────────
+.home .page-lede { margin-block-end: $spacing-06; }
+.home-lead, .home-side { margin-block-end: $spacing-06; }
+.home-block { margin-block-end: $spacing-08; }
+.block__title { @include type-style('heading-03'); margin-block-end: $spacing-05; }
+.ann { display: flex; flex-direction: column; gap: $spacing-04; height: 100%; padding: $spacing-06; }
+.ann--lead { border-block-start: 3px solid $interactive; min-block-size: 100%; }
+.ann__head { display: flex; align-items: center; justify-content: space-between; gap: $spacing-04; }
+.ann__head .cds--tag { margin: 0; }
+.ann__date { @include type-style('label-01'); color: $text-secondary; }
+.ann__title { @include type-style('fluid-heading-04', true); }
+.ann__title--sm { @include type-style('heading-03'); }
+.ann__body { @include type-style('body-01'); color: $text-secondary; flex: 1; }
+.ann-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: $spacing-05; margin-block-end: $spacing-05; }
+
+.panel { background: $layer-01; padding: $spacing-06; height: 100%; }
+.panel__title { @include type-style('heading-compact-01'); display: flex; align-items: center; gap: $spacing-03; margin-block-end: $spacing-05; }
+.panel__note { @include type-style('helper-text-01'); color: $text-secondary; margin-block: $spacing-04; }
+.events { list-style: none; }
+.event { display: flex; gap: $spacing-04; padding-block: $spacing-04; border-block-end: 1px solid $border-subtle-02;
+  &:last-of-type { border-block-end: none; }
+}
+.event__date { @include type-style('label-02'); color: $text-primary; flex: none; inline-size: 4rem; }
+.event__body { display: flex; flex-direction: column; gap: $spacing-02; @include type-style('body-compact-01'); }
+.event__meta { @include type-style('helper-text-01'); color: $text-secondary; }
+
+.section-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: $spacing-03; }
+.section-chip { display: flex; align-items: center; justify-content: space-between; gap: $spacing-04; padding: $spacing-05; }
+.section-chip__label { @include type-style('body-compact-01'); }
+.section-chip__count { @include type-style('label-01'); color: $text-secondary; }
+.promo { padding: $spacing-06; display: flex; flex-direction: column; gap: $spacing-04; align-items: flex-start; border-inline-start: 3px solid $interactive; }

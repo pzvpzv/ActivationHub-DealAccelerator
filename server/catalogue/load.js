@@ -80,7 +80,7 @@ export function validateCatalogue(raw) {
     seen.add(parsed.data.id);
     resources.push({ ...parsed.data, section: sectionFor(parsed.data, taxonomy) });
   }
-  return { taxonomy, resources, issues, hubUrl: raw.hubUrl, generatedFrom: raw.generatedFrom };
+  return { taxonomy, resources, announcements: raw.announcements || [], issues, hubUrl: raw.hubUrl, generatedFrom: raw.generatedFrom };
 }
 
 let cache = { mtimeMs: -1, value: null };

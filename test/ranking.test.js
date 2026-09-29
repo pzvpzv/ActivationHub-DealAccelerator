@@ -121,3 +121,11 @@ test("a resource can override the section its type implies", () => {
   const bad = validateCatalogue({ ...raw, resources: [{ ...moved, id: "bad-section", section: "nope" }] });
   assert.match(bad.issues[0].problems.join(" "), /section: "nope"/);
 });
+
+test("announcements are real items that point at something", () => {
+  assert.ok(raw.announcements.length >= 3);
+  for (const a of raw.announcements) {
+    assert.ok(a.title && a.body && a.date && a.action?.url, `${a.id} is complete`);
+    if (a.resourceId) assert.ok(catalogue.byId.has(a.resourceId), `${a.id} points at a real resource`);
+  }
+});

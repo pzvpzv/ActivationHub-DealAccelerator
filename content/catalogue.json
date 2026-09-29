@@ -314,24 +314,29 @@
     ],
     "sections": [
       {
-        "id": "enablement",
-        "label": "Enablement & guides",
-        "blurb": "Recordings, walkthroughs, guided labs and user guides — how the platform works and how to use it."
-      },
-      {
         "id": "demos",
-        "label": "Demos & assets",
-        "blurb": "Runnable app templates and client-ready walkthrough decks you can show or convert."
+        "label": "Client-ready demos",
+        "blurb": "Runnable app templates and walkthrough decks you can show a client or convert for one."
       },
       {
-        "id": "tools",
-        "label": "Tools & accelerators",
-        "blurb": "Demo Factory, Proposal Generator and the Advantage platforms — where you actually build."
+        "id": "build",
+        "label": "Build & accelerate",
+        "blurb": "Demo Factory, the Proposal Generator and the Advantage platforms — where you make something."
+      },
+      {
+        "id": "video-library",
+        "label": "Video library",
+        "blurb": "Recorded sessions, walkthroughs, deep dives and launch webinars."
+      },
+      {
+        "id": "guides-labs",
+        "label": "Guides & labs",
+        "blurb": "Step-by-step guides, playbooks and hands-on labs to work through at your own pace."
       },
       {
         "id": "training",
-        "label": "Training & events",
-        "blurb": "Masterclasses, SME sessions, labs and roadshows — what to attend and when."
+        "label": "Training & calendar",
+        "blurb": "Masterclasses, SME sessions, adoption labs and roadshows — what's on and when."
       },
       {
         "id": "campaigns",
@@ -340,8 +345,8 @@
       },
       {
         "id": "community",
-        "label": "Community & support",
-        "blurb": "Where to ask a question and who to contact."
+        "label": "Community",
+        "blurb": "Where to ask a question, share what you built and find the team."
       }
     ],
     "types": [
@@ -349,7 +354,7 @@
         "id": "accelerator",
         "label": "Accelerator",
         "mode": "build",
-        "section": "tools"
+        "section": "build"
       },
       {
         "id": "template",
@@ -367,19 +372,19 @@
         "id": "recording",
         "label": "Recording",
         "mode": "learn",
-        "section": "enablement"
+        "section": "video-library"
       },
       {
         "id": "guide",
         "label": "Guide",
         "mode": "learn",
-        "section": "enablement"
+        "section": "guides-labs"
       },
       {
         "id": "lab",
         "label": "Lab",
         "mode": "learn",
-        "section": "enablement"
+        "section": "guides-labs"
       },
       {
         "id": "course",
@@ -409,7 +414,7 @@
         "id": "platform",
         "label": "Platform / tool",
         "mode": "build",
-        "section": "tools"
+        "section": "build"
       },
       {
         "id": "community",
@@ -4666,17 +4671,20 @@
         {
           "date": "28–30 Sep 2026",
           "location": "New York, NY",
-          "status": "confirmed"
+          "status": "confirmed",
+          "start": "2026-09-28"
         },
         {
           "date": "19–21 Oct 2026",
           "location": "Texas (office TBD)",
-          "status": "confirmed"
+          "status": "confirmed",
+          "start": "2026-10-19"
         },
         {
           "date": "30 Nov – 2 Dec 2026",
           "location": "New York, NY",
-          "status": "confirmed"
+          "status": "confirmed",
+          "start": "2026-11-30"
         }
       ],
       "authoritativeSource": "Activation Hub — Curriculum",
@@ -4737,27 +4745,32 @@
         {
           "date": "18 Sep 2026",
           "location": "Munich (HCD × S&T)",
-          "status": "confirmed"
+          "status": "confirmed",
+          "start": "2026-09-18"
         },
         {
           "date": "5 Oct 2026",
           "location": "Madrid (HCD × S&T)",
-          "status": "confirmed"
+          "status": "confirmed",
+          "start": "2026-10-05"
         },
         {
           "date": "19 Oct 2026",
           "location": "Rome (HCD × S&T)",
-          "status": "confirmed"
+          "status": "confirmed",
+          "start": "2026-10-19"
         },
         {
           "date": "21 Oct 2026",
           "location": "Milan (HCD × S&T)",
-          "status": "confirmed"
+          "status": "confirmed",
+          "start": "2026-10-21"
         },
         {
           "date": "TBC",
           "location": "France, UKI, NCEE, Stockholm",
-          "status": "coming soon"
+          "status": "coming soon",
+          "start": null
         }
       ],
       "authoritativeSource": "Activation Hub — Curriculum",
@@ -5218,6 +5231,68 @@
       "authoritativeSource": "Activation Hub — Curriculum",
       "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/",
       "provenance": "Activation Hub [TEST] export, 16 Sep 2026"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-process-studio-ga",
+      "kind": "launch",
+      "title": "Process Studio is generally available",
+      "date": "2026-07-01",
+      "body": "Ground, analyse, re-imagine and simulate — live on the global instance for everyone. Watch the launch video or read the User Guide.",
+      "action": {
+        "label": "Jump right in",
+        "url": "https://w3.ibm.com/services/lighthouse/knowledge/videos/147185"
+      },
+      "resourceId": "process-studio"
+    },
+    {
+      "id": "ann-demo-factory-open",
+      "kind": "launch",
+      "title": "The EAEF Demo Factory is open",
+      "date": "2026-07-01",
+      "body": "Spin up ready-to-show builds, browse pre-assembled scenarios and get your next client demo off the line.",
+      "action": {
+        "label": "Enter the Factory",
+        "url": "https://pages.github.ibm.com/tolga/eaef-demo-factory/en/"
+      },
+      "resourceId": "demo-factory"
+    },
+    {
+      "id": "ann-finance-campaign",
+      "kind": "campaign",
+      "title": "Redefine Finance with Agentic AI — campaign live",
+      "date": "2026-07-30",
+      "body": "Joint AIIS × Finance Strategy & Transformation go-to-market, covering 30–40 finance use cases with client collateral and a launch replay.",
+      "action": {
+        "label": "Open the campaign",
+        "url": "https://w3.ibm.com/consulting/contentplus/campaigns/682f608c12e6482db7c77d81"
+      },
+      "resourceId": "campaign-finance"
+    },
+    {
+      "id": "ann-proposal-generator-beta",
+      "kind": "beta",
+      "title": "AIIS Proposal Generator is in beta",
+      "date": "2026-08-01",
+      "body": "Draft client-ready proposals in a fraction of the time. Try it on your next opportunity and tell the team what to improve.",
+      "action": {
+        "label": "Try the Generator",
+        "url": "https://pages.github.ibm.com/emeacoreai/aiis-proposal-generator/"
+      },
+      "resourceId": "proposal-generator"
+    },
+    {
+      "id": "ann-product-workbench-alpha",
+      "kind": "alpha",
+      "title": "Product Workbench alpha is underway",
+      "date": "2026-09-01",
+      "body": "Early access is running now — explore the docs and catch up on the enablement sessions.",
+      "action": {
+        "label": "View the docs",
+        "url": "https://pages.github.ibm.com/ibm-product-workbench/pwb-user-facing-docsite/"
+      },
+      "resourceId": "product-workbench"
     }
   ]
 }

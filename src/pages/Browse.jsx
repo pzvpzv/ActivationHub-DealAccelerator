@@ -64,7 +64,8 @@ export function Browse() {
   const typeItems = dropdown(taxonomy?.types ?? [], "types");
   const capItems = dropdown(taxonomy?.capabilities ?? [], "capabilities");
   const indItems = dropdown(taxonomy?.industries ?? [], "industries");
-  const selected = (items, id) => items.find((i) => i.id === id) || items[0];
+  // null keeps the dropdown controlled while the catalogue is still loading.
+  const selected = (items, id) => items.find((i) => i.id === id) || items[0] || null;
 
   return (
     <Grid className="page">
