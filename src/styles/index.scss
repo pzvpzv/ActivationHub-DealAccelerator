@@ -186,3 +186,41 @@ body { background: $background; }
 .section-chip__label { @include type-style('body-compact-01'); }
 .section-chip__count { @include type-style('label-01'); color: $text-secondary; }
 .promo { padding: $spacing-06; display: flex; flex-direction: column; gap: $spacing-04; align-items: flex-start; border-inline-start: 3px solid $interactive; }
+
+// ── Calendar ─────────────────────────────────────
+.cal-col { margin-block-end: $spacing-06; }
+.cal { background: $layer-01; padding: $spacing-05; }
+.cal__head { display: flex; align-items: center; justify-content: space-between; margin-block-end: $spacing-04; }
+.cal__label { @include type-style('heading-compact-01'); }
+.cal__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: $border-subtle-01; border: 1px solid $border-subtle-01; }
+.cal__dayname { @include type-style('label-01'); color: $text-secondary; background: $layer-01; padding: $spacing-03 0; text-align: center; }
+.cal__cell { background: $layer-02; border: none; min-block-size: 3rem; padding: $spacing-02; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: $spacing-02; cursor: default;
+  &--empty { background: $layer-01; }
+  &--has { cursor: pointer; &:hover { background: $layer-hover-02; } }
+  &--today .cal__date { color: $link-primary; font-weight: 600; }
+  &--past { opacity: 0.55; }
+  &--selected { outline: 2px solid $interactive; outline-offset: -2px; background: $layer-selected-01; }
+  &:focus-visible { outline: 2px solid $focus; outline-offset: -2px; }
+}
+.cal__date { @include type-style('body-compact-01'); color: $text-primary; }
+.cal__dots { display: flex; gap: 2px; }
+.cal__dot { inline-size: 6px; block-size: 6px; border-radius: 50%; background: $icon-secondary; display: inline-block;
+  &--confirmed { background: $support-success; }
+  &--complete { background: $icon-secondary; }
+  &--postponed { background: $support-warning; }
+  &--coming-soon { background: $support-info; }
+}
+.cal__legend { display: flex; align-items: center; gap: $spacing-02; @include type-style('helper-text-01'); color: $text-secondary; margin-block-start: $spacing-04;
+  .cal__dot { margin-inline-start: $spacing-04; &:first-child { margin-inline-start: 0; } }
+}
+.events-head { display: flex; align-items: center; justify-content: space-between; gap: $spacing-05; flex-wrap: wrap; margin-block-end: $spacing-05; }
+.events-head__count { @include type-style('label-01'); color: $text-secondary; }
+.events-list { display: grid; gap: $spacing-04; }
+.event-card { display: flex; flex-direction: column; gap: $spacing-03; padding: $spacing-05; }
+.event-card__head { display: flex; align-items: center; gap: $spacing-04; }
+.event-card__head .cds--tag { margin: 0; }
+.event-card__series { @include type-style('label-01'); color: $text-secondary; }
+.event-card__title { @include type-style('heading-compact-01'); }
+.event-card__when { @include type-style('body-compact-01'); color: $text-primary; }
+.event-card__desc, .event-card__meta { @include type-style('body-compact-01'); color: $text-secondary; }
+.event-card__note { @include type-style('helper-text-01'); color: $text-secondary; }

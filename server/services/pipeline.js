@@ -7,7 +7,13 @@ import { explainFromMetadata } from "./explain-metadata.js";
 
 const SECTION_LABELS = { show: "Show it", learn: "Learn it", build: "Build it" };
 
-function toCard(rec, resource, taxonomy) {
+function toCard(rec, resource, taxonomy, events = []) {
+  const today = new Date().toISOString().slice(0, 10);
+  const sessions = events
+    .filter((e) => e.resourceId === resource.id && e.start && e.start >= today && e.status !== "Postponed")
+    .sort((a, b) => a.start.localeCompare(b.start))
+    .slice(0, 3)
+    .map((e) => ({ date: e.dateText, location: e.location, status: e.status.toLowerCase() }));
   return {
     id: resource.id,
     title: resource.title,
@@ -25,7 +31,7 @@ function toCard(rec, resource, taxonomy) {
     authoritativeSource: resource.authoritativeSource,
     actions: resource.actions,
     contact: resource.contact,
-    sessions: resource.sessions || null,
+    sessions: sessions.length ? sessions : null,
     whyItFits: rec.whyItFits,
     bestFor: rec.bestFor,
   };
@@ -100,7 +106,7 @@ export async function runPipeline({ query, mode = "ai", catalogue, ai }, emit) {
   for (const rec of explained.recommendations) {
     let section = sections.find((s) => s.key === rec.section);
     if (!section) sections.push((section = { key: rec.section, label: SECTION_LABELS[rec.section], items: [] }));
-    section.items.push(toCard(rec, catalogue.byId.get(rec.id), catalogue.taxonomy));
+    section.items.push(toCard(rec, catalogue.byId.get(rec.id), catalogue.taxonomy, catalogue.events));
   }
 
   return {

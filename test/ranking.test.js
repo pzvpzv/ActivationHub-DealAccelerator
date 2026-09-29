@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { validateCatalogue } from "../server/catalogue/load.js";
+import { validateCatalogue, validateEvents } from "../server/catalogue/load.js";
 import { effectiveIntent, rankCatalogue, assessCoverage, scoreResource } from "../server/services/ranking.js";
 import { interpretWithoutAI } from "../server/services/intent.js";
 import fs from "node:fs";
@@ -128,4 +128,21 @@ test("announcements are real items that point at something", () => {
     assert.ok(a.title && a.body && a.date && a.action?.url, `${a.id} is complete`);
     if (a.resourceId) assert.ok(catalogue.byId.has(a.resourceId), `${a.id} points at a real resource`);
   }
+});
+
+test("events are dated occurrences that point at real courses", () => {
+  const { events, issues } = validateEvents(raw, new Set(raw.resources.map((r) => r.id)));
+  assert.equal(issues.length, 0);
+  assert.ok(events.length > 40, "the hub's event history came across");
+  assert.ok(events.filter((e) => e.start).length > 40, "most events carry a machine-readable date");
+  // A multi-day event must cover every day it runs, or the calendar loses it mid-run.
+  const multiDay = events.find((e) => e.end && e.end !== e.start);
+  assert.ok(multiDay.start < multiDay.end);
+  const bad = validateEvents({ events: [{ ...events[0], resourceId: "no-such-course" }] }, new Set());
+  assert.match(bad.issues[0].problems.join(" "), /is not a resource/);
+});
+
+test("no resource keeps its own copy of session dates", () => {
+  // Events are the single source; duplicated dates are how the hub's two lists drifted apart.
+  assert.equal(raw.resources.filter((r) => r.sessions).length, 0);
 });

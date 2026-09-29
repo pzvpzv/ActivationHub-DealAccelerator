@@ -24,8 +24,8 @@ export function Home() {
 
   const upcoming = useMemo(() => {
     if (!catalogue) return [];
-    return catalogue.resources
-      .flatMap((r) => (r.sessions || []).filter((s) => s.start && s.start >= today).map((s) => ({ ...s, resource: r })))
+    return (catalogue.events || [])
+      .filter((e) => e.start && e.start >= today && e.status !== "Postponed")
       .sort((a, b) => a.start.localeCompare(b.start))
       .slice(0, 4);
   }, [catalogue, today]);
@@ -71,12 +71,12 @@ export function Home() {
           <div className="panel">
             <h2 className="panel__title"><Calendar size={16} /> Next up</h2>
             <ul className="events">
-              {upcoming.map((s) => (
-                <li key={`${s.resource.id}-${s.start}`} className="event">
-                  <span className="event__date">{fmt(s.start)}</span>
+              {upcoming.map((e) => (
+                <li key={e.id} className="event">
+                  <span className="event__date">{fmt(e.start)}</span>
                   <span className="event__body">
-                    <RouterLink to={`/browse?section=training&q=${encodeURIComponent(s.resource.title)}`}>{s.resource.title}</RouterLink>
-                    <span className="event__meta">{s.location} · {s.date}</span>
+                    <RouterLink to={`/browse?section=training&date=${e.start}`}>{e.title}</RouterLink>
+                    <span className="event__meta">{e.location} · {e.dateText}</span>
                   </span>
                 </li>
               ))}

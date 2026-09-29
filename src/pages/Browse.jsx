@@ -3,8 +3,8 @@ import { useSearchParams, Link as RouterLink } from "react-router-dom";
 import { Grid, Column, Search, Dropdown, ContentSwitcher, Switch, Tile, ClickableTile, Button, InlineNotification, SkeletonText, Link, Tag } from "@carbon/react";
 import { ArrowRight, ArrowLeft } from "@carbon/icons-react";
 import { useCatalogue, labelFor } from "../api/useCatalogue.js";
-import { ResourceTags } from "../components/ResourceTags.jsx";
-import { ResourceActions } from "../components/ResourceActions.jsx";
+import { ResourceTile } from "../components/ResourceTile.jsx";
+import { TrainingCalendar } from "./TrainingCalendar.jsx";
 
 const MODES = [
   { id: "all", label: "All" },
@@ -54,6 +54,7 @@ export function Browse() {
     [inSection, q, mode, type, capability, industry]
   );
 
+  if (catalogue && section === "training") return <TrainingCalendar catalogue={catalogue} />;
   if (error) return <Grid className="page"><Column sm={4} md={8} lg={12}><InlineNotification kind="error" title="Couldn't load the resource inventory" subtitle={error.message} hideCloseButton /></Column></Grid>;
 
   const { taxonomy } = catalogue || {};
@@ -140,15 +141,7 @@ export function Browse() {
 
           {filtered.map((r) => (
             <Column key={r.id} sm={4} md={4} lg={5} className="browse-col">
-              <Tile className="browse-tile">
-                <ResourceTags type={r.type} typeLabel={labelFor(taxonomy.types, r.type)} status={r.status} readiness={r.readiness} readinessLabel={labelFor(taxonomy.readiness, r.readiness)} />
-                <h2 className="browse-tile__title">{r.title}</h2>
-                <p className="browse-tile__desc">{r.description}</p>
-                <p className="browse-tile__meta"><span className="label">Best for</span> {r.purpose}</p>
-                {r.industries.length > 0 && <p className="browse-tile__meta"><span className="label">Industry</span> {r.industries.map((i) => labelFor(taxonomy.industries, i)).join(", ")}</p>}
-                {!section && <Tag size="sm" type="outline" className="browse-tile__section">{labelFor(taxonomy.sections, r.section)}</Tag>}
-                <div className="browse-tile__actions"><ResourceActions actions={r.actions.slice(0, 1)} source={r.authoritativeSource} size="sm" /></div>
-              </Tile>
+              <ResourceTile resource={r} taxonomy={taxonomy} showSection={!section} />
             </Column>
           ))}
         </>

@@ -62,6 +62,41 @@ function crossCheck(resource, taxonomy) {
   return problems;
 }
 
+const EventSchema = z.object({
+  id: z.string().min(1),
+  title: z.string().min(1),
+  dateText: z.string().min(1),
+  start: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable(),
+  end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable(),
+  location: z.string(),
+  description: z.string(),
+  audience: z.string(),
+  status: z.enum(["Complete", "Confirmed", "Postponed", "Coming Soon"]),
+  quarter: z.string(),
+  series: z.string(),
+  format: z.enum(["in-person", "virtual"]),
+  resourceId: z.string().nullable(),
+}).passthrough();
+
+/** Events are occurrences, not assets: they live beside the resources and may point at one. */
+export function validateEvents(raw, resourceIds) {
+  const events = [];
+  const issues = [];
+  for (const [i, candidate] of (raw.events || []).entries()) {
+    const parsed = EventSchema.safeParse(candidate);
+    if (!parsed.success) {
+      issues.push({ id: candidate?.id || `events[${i}]`, problems: parsed.error.issues.map((x) => `${x.path.join(".")}: ${x.message}`) });
+      continue;
+    }
+    if (parsed.data.resourceId && !resourceIds.has(parsed.data.resourceId)) {
+      issues.push({ id: parsed.data.id, problems: [`resourceId: "${parsed.data.resourceId}" is not a resource`] });
+      continue;
+    }
+    events.push(parsed.data);
+  }
+  return { events, issues };
+}
+
 export function validateCatalogue(raw) {
   const issues = [];
   const taxonomy = raw.taxonomy;
@@ -80,7 +115,9 @@ export function validateCatalogue(raw) {
     seen.add(parsed.data.id);
     resources.push({ ...parsed.data, section: sectionFor(parsed.data, taxonomy) });
   }
-  return { taxonomy, resources, announcements: raw.announcements || [], issues, hubUrl: raw.hubUrl, generatedFrom: raw.generatedFrom };
+  const eventResult = validateEvents(raw, new Set(resources.map((r) => r.id)));
+  issues.push(...eventResult.issues);
+  return { taxonomy, resources, events: eventResult.events, announcements: raw.announcements || [], issues, hubUrl: raw.hubUrl, generatedFrom: raw.generatedFrom };
 }
 
 let cache = { mtimeMs: -1, value: null };
