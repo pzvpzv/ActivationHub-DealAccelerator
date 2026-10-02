@@ -5174,6 +5174,30 @@
   ],
   "announcements": [
     {
+      "id": "ann-ps-new-release-webinar",
+      "kind": "launch",
+      "title": "Process Studio New Release — join the webinar on 8 October",
+      "date": "2026-10-08",
+      "body": "The latest Process Studio release is here. Join the live webinar on 8 October to see what's new — or explore the updated User Guide and How-To video to get up to speed now.",
+      "action": {
+        "label": "Enrol for the webinar",
+        "url": "https://ec.yourlearning.ibm.com/w3/enrollment/event/10595922"
+      },
+      "resourceId": "process-studio"
+    },
+    {
+      "id": "ann-ps-user-guide-updated",
+      "kind": "notice",
+      "title": "Process Studio User Guide updated",
+      "date": "2026-10-01",
+      "body": "The User Guide has been updated to cover the latest release — Ground, Assess, Re-imagine, Simulate and hand-off to coding agent, step by step.",
+      "action": {
+        "label": "Open the User Guide",
+        "url": "https://pages.github.ibm.com/Consulting-DTT-AI-Integration-Services/ea-learning/docs/process-studio-use-guide.html"
+      },
+      "resourceId": "process-studio"
+    },
+    {
       "id": "ann-process-studio-ga",
       "kind": "launch",
       "title": "Process Studio is generally available",
@@ -5974,9 +5998,9 @@
     {
       "id": "ea-roadshow-rome-hcd-s-t-19-oct",
       "title": "EA Roadshow — Rome HCD × S&T",
-      "dateText": "19 Oct",
-      "start": "2026-10-19",
-      "end": "2026-10-19",
+      "dateText": "27 Oct",
+      "start": "2026-10-27",
+      "end": "2026-10-27",
       "location": "Rome",
       "description": "EA EMEA Roadshow — full-day immersive · HCD × S&T joint event · Italy market",
       "audience": "EMEA practitioners · HCD & S&T",
@@ -6006,11 +6030,27 @@
     {
       "id": "ea-roadshow-milan-hcd-s-t-21-oct",
       "title": "EA Roadshow — Milan HCD × S&T",
+      "dateText": "26 Oct",
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "location": "Milan",
+      "description": "EA EMEA Roadshow — full-day immersive · HCD × S&T joint event · Italy market",
+      "audience": "EMEA practitioners · HCD & S&T",
+      "status": "Confirmed",
+      "quarter": "Q4",
+      "series": "EA Roadshow",
+      "format": "in-person",
+      "resourceId": "course-roadshow",
+      "provenance": "Activation Hub event tables (export 29 Sep 2026)"
+    },
+    {
+      "id": "ea-roadshow-stuttgart-hcd-s-t-21-oct",
+      "title": "EA Roadshow — Stuttgart HCD × S&T",
       "dateText": "21 Oct",
       "start": "2026-10-21",
       "end": "2026-10-21",
-      "location": "Milan",
-      "description": "EA EMEA Roadshow — full-day immersive · HCD × S&T joint event · Italy market",
+      "location": "Stuttgart",
+      "description": "EA EMEA Roadshow — full-day immersive · HCD × S&T joint event · DACH market",
       "audience": "EMEA practitioners · HCD & S&T",
       "status": "Confirmed",
       "quarter": "Q4",
