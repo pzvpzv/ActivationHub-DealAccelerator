@@ -15,7 +15,10 @@ ROOT="$PWD"
 
 git remote get-url "$REMOTE" >/dev/null || { echo "No '$REMOTE' remote. Add it with: git remote add $REMOTE <url>"; exit 1; }
 # Enterprise Pages serves every user from one domain, so the site lives under /<owner>/<repo>/.
-OWNER_REPO=$(git remote get-url "$REMOTE" | sed -E 's#.*[:/]([^/]+/[^/]+?)(\.git)?$#\1#')
+REMOTE_URL=$(git remote get-url "$REMOTE"); REMOTE_URL="${REMOTE_URL%.git}"
+PAGES_REPO_NAME="${REMOTE_URL##*/}"                       # …/owner/repo  -> repo
+PAGES_OWNER="${REMOTE_URL%/*}"; PAGES_OWNER="${PAGES_OWNER##*/}"; PAGES_OWNER="${PAGES_OWNER##*:}"   # https or ssh form -> owner
+OWNER_REPO="$PAGES_OWNER/$PAGES_REPO_NAME"
 BASE="${PAGES_BASE:-/$OWNER_REPO/}"
 echo "── publishing $OWNER_REPO at $BASE"
 if [ -n "$(git status --porcelain)" ]; then
