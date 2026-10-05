@@ -7,7 +7,8 @@
     "dev": "concurrently -n api,web -c blue,magenta \"node --watch server/index.js\" \"vite\"",
     "build": "vite build",
     "start": "node server/index.js",
-    "validate:content": "node scripts/validate-catalogue.js"
+    "validate:content": "node scripts/validate-catalogue.js",
+    "publish:ibm": "bash scripts/publish-ibm-pages.sh"
   },
   "keywords": [],
   "author": "",
