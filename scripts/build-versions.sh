@@ -3,7 +3,8 @@
 # Each tag is built from its own commit, with its own catalogue, so an old
 # iteration keeps showing what it actually looked like.
 set -euo pipefail
-REPO="${1:?repository name required}"
+BASE="${1:?base path required, e.g. /owner/repo/ or /repo/}"
+case "$BASE" in */) ;; *) BASE="$BASE/" ;; esac
 ROOT="$PWD"
 TAGS=$(git tag -l 'v*' --sort=-creatordate)
 [ -z "$TAGS" ] && { echo "no v* tags yet"; exit 0; }
@@ -16,7 +17,7 @@ for TAG in $TAGS; do
   rm -rf "$WORK"
   git worktree add --force --detach "$WORK" "$TAG" >/dev/null
   ln -s "$ROOT/node_modules" "$WORK/node_modules"
-  ( cd "$WORK" && VITE_STATIC=1 VITE_BASE="/$REPO/v/$TAG/" VITE_VERSION="$TAG" npx vite build --outDir dist >/dev/null )
+  ( cd "$WORK" && VITE_STATIC=1 VITE_BASE="${BASE}v/$TAG/" VITE_VERSION="$TAG" npx vite build --outDir dist >/dev/null )
   mkdir -p "dist/v/$TAG"
   cp -r "$WORK/dist/." "dist/v/$TAG/"
   cp "$WORK/content/catalogue.json" "dist/v/$TAG/catalogue.json"

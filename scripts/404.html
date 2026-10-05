@@ -2,14 +2,16 @@
 <html lang="en"><head><meta charset="utf-8"><title>AIIS Activation Hub</title>
 <script>
   // GitHub Pages serves only this root 404 for any unknown path, so a deep link into the
-  // app — or into a tagged version under /v/<tag>/ — lands here. Send it to the right
+  // app — or into a tagged version under <base>v/<tag>/ — lands here. Send it to the right
   // index.html, keeping the requested path in ?p= for the app to restore.
+  // __BASE__ is replaced at build time: "/repo/" on github.com, "/owner/repo/" on Enterprise.
   (function () {
-    var parts = location.pathname.split('/').filter(Boolean);
-    var base = '/' + (parts.shift() || '') + '/';
-    if (parts[0] === 'v' && parts[1]) { base += 'v/' + parts[1] + '/'; parts = parts.slice(2); }
-    var query = location.search ? '&' + location.search.slice(1) : '';
-    location.replace(base + '?p=/' + parts.join('/') + query + location.hash);
+    var base = "__BASE__";
+    var rest = location.pathname.indexOf(base) === 0 ? location.pathname.slice(base.length) : "";
+    var version = rest.match(/^v\/([^/]+)\//);
+    if (version) { base += "v/" + version[1] + "/"; rest = rest.slice(version[0].length); }
+    var query = location.search ? "&" + location.search.slice(1) : "";
+    location.replace(base + "?p=/" + rest + query + location.hash);
   })();
 </script>
 </head><body></body></html>

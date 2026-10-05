@@ -9,25 +9,28 @@
 set -euo pipefail
 
 REMOTE="${PAGES_REMOTE:-ibm}"
-REPO="${PAGES_REPO:-ActivationHub-DealAccelerator}"
 BRANCH="${PAGES_BRANCH:-gh-pages}"
 OUT="$(mktemp -d)/site"
 ROOT="$PWD"
 
 git remote get-url "$REMOTE" >/dev/null || { echo "No '$REMOTE' remote. Add it with: git remote add $REMOTE <url>"; exit 1; }
+# Enterprise Pages serves every user from one domain, so the site lives under /<owner>/<repo>/.
+OWNER_REPO=$(git remote get-url "$REMOTE" | sed -E 's#.*[:/]([^/]+/[^/]+?)(\.git)?$#\1#')
+BASE="${PAGES_BASE:-/$OWNER_REPO/}"
+echo "── publishing $OWNER_REPO at $BASE"
 if [ -n "$(git status --porcelain)" ]; then
   echo "Working tree is not clean — commit or stash first so the published site matches a commit."
   exit 1
 fi
 
 echo "── building the current version"
-VITE_STATIC=1 VITE_BASE="/$REPO/" VITE_VERSION=latest npx vite build --outDir "$OUT" --emptyOutDir >/dev/null
+VITE_STATIC=1 VITE_BASE="$BASE" VITE_VERSION=latest npx vite build --outDir "$OUT" --emptyOutDir >/dev/null
 cp content/catalogue.json "$OUT/catalogue.json"
-cp scripts/404.html "$OUT/404.html"
+sed "s#__BASE__#$BASE#" scripts/404.html > "$OUT/404.html"
 touch "$OUT/.nojekyll"   # keep Pages from running Jekyll over the build
 
 echo "── building tagged versions"
-( cd "$ROOT" && dist_backup=$(mktemp -d) && bash scripts/build-versions.sh "$REPO" >/dev/null && cp -r dist/v "$OUT/v" && rm -rf dist "$dist_backup" )
+( cd "$ROOT" && bash scripts/build-versions.sh "$BASE" >/dev/null && cp -r dist/v "$OUT/v" && rm -rf dist )
 
 echo "── publishing to $REMOTE/$BRANCH"
 cd "$OUT"
