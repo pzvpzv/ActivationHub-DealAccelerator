@@ -37,4 +37,4 @@ git add -A
 git -c user.email="$(cd "$ROOT" && git config user.email)" -c user.name="$(cd "$ROOT" && git config user.name)" \
     commit -qm "Publish site from $(cd "$ROOT" && git describe --always --dirty) ($(date -u +%Y-%m-%dT%H:%MZ))"
 git push -q --force "$(cd "$ROOT" && git remote get-url "$REMOTE")" "$BRANCH:$BRANCH"
-echo "published $(ls "$OUT/v" 2>/dev/null | grep -c . || echo 0) tagged version(s) plus the current build"
+echo "published $(find "$OUT/v" -maxdepth 1 -mindepth 1 -type d 2>/dev/null | wc -l | tr -d " ") tagged version(s) plus the current build"
